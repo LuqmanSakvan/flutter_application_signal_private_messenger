@@ -36,10 +36,7 @@ class Myhome extends StatelessWidget {
           )
         ],
       ), //AppBar
-      body: UsersList(
-        name: "luqman",
-        count: 24,
-      ),
+      body: UsersList(),
       floatingActionButton:
           Column(mainAxisAlignment: MainAxisAlignment.end, children: [
         FloatingActionButton(
