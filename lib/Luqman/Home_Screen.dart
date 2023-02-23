@@ -24,6 +24,14 @@ class Myhome extends StatelessWidget {
             ),
             color: Colors.black,
             onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.menu,
+              size: 30,
+            ),
+            color: Colors.black,
+            onPressed: () {},
           )
         ],
       ), //AppBar
