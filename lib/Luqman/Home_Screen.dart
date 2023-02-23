@@ -46,6 +46,11 @@ class Myhome extends StatelessWidget {
           onPressed: () {},
           heroTag: null,
           backgroundColor: Colors.white,
+        ),
+        FloatingActionButton(
+          child: Icon(Icons.edit),
+          onPressed: () {},
+          heroTag: null,
         )
       ]),
     );
