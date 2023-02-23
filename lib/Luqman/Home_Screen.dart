@@ -35,12 +35,19 @@ class Myhome extends StatelessWidget {
           )
         ],
       ), //AppBar
-      body: const Center(
-        child: Text(
-          'Luqman(Computer Science)',
-          style: TextStyle(fontSize: 24),
-        ), //Text
-      ), // center
+      // body:
+      floatingActionButton:
+          Column(mainAxisAlignment: MainAxisAlignment.end, children: [
+        FloatingActionButton(
+          child: Icon(
+            Icons.photo,
+            color: Colors.black,
+          ),
+          onPressed: () {},
+          heroTag: null,
+          backgroundColor: Colors.white,
+        )
+      ]),
     );
   }
 }
