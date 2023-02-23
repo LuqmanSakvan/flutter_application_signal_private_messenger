@@ -16,6 +16,16 @@ class Myhome extends StatelessWidget {
             color: Colors.black,
           ),
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(
+              Icons.search,
+              size: 30,
+            ),
+            color: Colors.black,
+            onPressed: () {},
+          )
+        ],
       ), //AppBar
       body: const Center(
         child: Text(
