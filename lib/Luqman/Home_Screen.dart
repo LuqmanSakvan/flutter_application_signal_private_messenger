@@ -7,7 +7,15 @@ class Myhome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Home Screen'),
+        backgroundColor: Colors.white,
+        title: const Text(
+          'Signal',
+          style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.w900,
+            color: Colors.black,
+          ),
+        ),
       ), //AppBar
       body: const Center(
         child: Text(
