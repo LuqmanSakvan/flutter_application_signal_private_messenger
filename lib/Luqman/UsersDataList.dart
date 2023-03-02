@@ -7,6 +7,7 @@ import 'dart:math';
 import 'dart:convert';
 import 'package:signal_private_messenger/Luqman/Models.dart';
 import 'package:http/http.dart' as http;
+import 'package:signal_private_messenger/Luqman/inbox.dart';
 
 class UsersList extends StatelessWidget {
   const UsersList({
@@ -63,7 +64,10 @@ class _SignalListState extends State<SignalList> {
               itemBuilder: (BuildContext context, int index) {
                 return (InkWell(
                   splashColor: getRandomColor(),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Inbox()));
+                  },
                   child: Ink(
                     child: ListTile(
                       leading: CircleAvatar(
