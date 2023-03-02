@@ -52,6 +52,16 @@ class _InboxState extends State<Inbox> {
               ),
             ),
           ),
+          Padding(
+            padding: EdgeInsets.only(right: 20.0),
+            child: GestureDetector(
+              onTap: () {},
+              child: Icon(
+                Icons.video_call,
+                size: 30,
+              ),
+            ),
+          ),
         ],
       ),
     ));
