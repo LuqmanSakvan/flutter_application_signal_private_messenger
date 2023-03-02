@@ -23,6 +23,17 @@ class _InboxState extends State<Inbox> {
             Navigator.pop(context);
           },
         ),
+        title: Row(
+          children: [
+            CircleAvatar(
+              backgroundColor: Colors.white,
+              child: Text(
+                'LU',
+                style: TextStyle(fontSize: 10),
+              ),
+            ),
+          ],
+        ),
       ),
     ));
   }
