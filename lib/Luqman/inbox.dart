@@ -32,6 +32,13 @@ class _InboxState extends State<Inbox> {
                 style: TextStyle(fontSize: 10),
               ),
             ),
+            Padding(
+              padding: EdgeInsets.only(left: 10),
+              child: Text(
+                "Luqman",
+                style: TextStyle(fontSize: 14),
+              ),
+            ),
           ],
         ),
       ),
