@@ -17,6 +17,12 @@ class _InboxState extends State<Inbox> {
         child: Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
     ));
   }
