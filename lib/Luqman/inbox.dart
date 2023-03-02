@@ -41,6 +41,18 @@ class _InboxState extends State<Inbox> {
             ),
           ],
         ),
+        actions: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(right: 20.0),
+            child: GestureDetector(
+              onTap: () {},
+              child: Icon(
+                Icons.phone,
+                size: 30,
+              ),
+            ),
+          ),
+        ],
       ),
     ));
   }
