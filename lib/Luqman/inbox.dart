@@ -91,7 +91,21 @@ class _InboxState extends State<Inbox> {
             padding: EdgeInsets.only(top: 10, bottom: 10),
             physics: NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) {
-              return Container();
+              return Container(
+                padding: EdgeInsets.only(
+                    left: 14.0, right: 14, top: 10, bottom: 10.0),
+                child: Align(
+                  alignment: Alignment.topLeft,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Color(0xFF1EA955),
+                    ),
+                    padding: EdgeInsets.all(16),
+                    child: Text(messages[index].messageContent),
+                  ),
+                ),
+              );
             },
           )
         ],
