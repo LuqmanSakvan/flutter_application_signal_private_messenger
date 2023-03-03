@@ -145,6 +145,13 @@ class _InboxState extends State<Inbox> {
                       color: Colors.lightBlue,
                       borderRadius: BorderRadius.circular(30),
                     ),
+
+                    //Button Add
+                    child: Icon(
+                      Icons.add,
+                      color: Colors.white,
+                      size: 20,
+                    ),
                   ),
                 )
               ]),
