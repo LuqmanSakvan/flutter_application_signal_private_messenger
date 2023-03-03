@@ -83,7 +83,19 @@ class _InboxState extends State<Inbox> {
           ),
         ],
       ),
-      //body: ,
+      body: Stack(
+        children: <Widget>[
+          ListView.builder(
+            itemCount: messages.length,
+            shrinkWrap: true,
+            padding: EdgeInsets.only(top: 10, bottom: 10),
+            physics: NeverScrollableScrollPhysics(),
+            itemBuilder: (context, index) {
+              return Container();
+            },
+          )
+        ],
+      ),
     ));
   }
 }
