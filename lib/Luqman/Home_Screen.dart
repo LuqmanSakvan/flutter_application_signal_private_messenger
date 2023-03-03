@@ -28,33 +28,35 @@ class Myhome extends StatelessWidget {
           ),
           IconButton(
             icon: Icon(
-              Icons.menu,
+              Icons.more_vert,
               size: 30,
             ),
             color: Colors.black,
             onPressed: () {},
           )
         ],
-      ), //AppBar
+      ),
       body: UsersList(),
-      floatingActionButton:
-          Column(mainAxisAlignment: MainAxisAlignment.end, children: [
-        FloatingActionButton(
-          child: Icon(
-            Icons.photo,
-            color: Colors.black,
+      floatingActionButton: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton(
+            child: Icon(
+              Icons.photo,
+              color: Colors.black,
+            ),
+            onPressed: () {},
+            heroTag: null,
+            backgroundColor: Colors.white,
           ),
-          onPressed: () {},
-          heroTag: null,
-          backgroundColor: Colors.white,
-        ),
-        SizedBox(height: 12),
-        FloatingActionButton(
-          child: Icon(Icons.edit),
-          onPressed: () {},
-          heroTag: null,
-        )
-      ]),
+          SizedBox(height: 12),
+          FloatingActionButton(
+            child: Icon(Icons.edit),
+            onPressed: () {},
+            heroTag: null,
+          )
+        ],
+      ),
     );
   }
 }
