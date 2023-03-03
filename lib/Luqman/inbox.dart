@@ -135,7 +135,11 @@ class _InboxState extends State<Inbox> {
               height: 60,
               width: double.infinity,
               color: Colors.white,
-              child: Row(children: <Widget>[GestureDetector()]),
+              child: Row(children: <Widget>[
+                GestureDetector(
+                  onTap: () {},
+                )
+              ]),
             ),
           ),
         ],
