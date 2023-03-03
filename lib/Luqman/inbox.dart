@@ -141,6 +141,10 @@ class _InboxState extends State<Inbox> {
                   child: Container(
                     height: 30,
                     width: 30,
+                    decoration: BoxDecoration(
+                      color: Colors.lightBlue,
+                      borderRadius: BorderRadius.circular(30),
+                    ),
                   ),
                 )
               ]),
