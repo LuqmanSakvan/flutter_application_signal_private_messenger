@@ -42,7 +42,7 @@ class Myhome extends StatelessWidget {
         children: [
           FloatingActionButton(
             child: Icon(
-              Icons.photo,
+              Icons.camera_enhance,
               color: Colors.black,
             ),
             onPressed: () {},
