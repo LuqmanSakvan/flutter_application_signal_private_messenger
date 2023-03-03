@@ -104,7 +104,14 @@ class _InboxState extends State<Inbox> {
                       color: Color(0xFF1EA955),
                     ),
                     padding: EdgeInsets.all(16),
-                    child: Text(messages[index].messageContent),
+                    child: Text(
+                      messages[index].messageContent,
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: messages[index].messageType == "receiver"
+                              ? Colors.white
+                              : Colors.black87),
+                    ),
                   ),
                 ),
               );
