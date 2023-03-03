@@ -95,7 +95,9 @@ class _InboxState extends State<Inbox> {
                 padding: EdgeInsets.only(
                     left: 14.0, right: 14, top: 10, bottom: 10.0),
                 child: Align(
-                  alignment: Alignment.topLeft,
+                  alignment: (messages[index].messageType == "receiver"
+                      ? Alignment.topLeft
+                      : Alignment.topRight),
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
