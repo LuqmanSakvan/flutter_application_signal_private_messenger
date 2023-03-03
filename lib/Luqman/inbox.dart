@@ -100,9 +100,10 @@ class _InboxState extends State<Inbox> {
                       : Alignment.topRight),
                   child: Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color(0xFF1EA955),
-                    ),
+                        borderRadius: BorderRadius.circular(20),
+                        color: messages[index].messageType == 'receiver'
+                            ? Color(0xFF10EA955)
+                            : Colors.grey.shade200),
                     padding: EdgeInsets.all(16),
                     child: Text(
                       messages[index].messageContent,
