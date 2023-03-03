@@ -15,3 +15,26 @@ class ChatMessage {
   String messageType;
   ChatMessage({required this.messageContent, required this.messageType});
 }
+
+//class User
+class UserData {
+  String name;
+  String email;
+  String? phone;
+
+//constractor for inti my var
+  UserData({
+    required this.name,
+    required this.email,
+    this.phone,
+  });
+}
+
+//create fake data
+List<UserData> userlist = [
+  UserData(
+    name: "LuqmanSakvan",
+    email: "Luqman@example.com",
+    phone: '0750555555',
+  ),
+];
