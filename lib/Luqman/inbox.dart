@@ -153,7 +153,9 @@ class _InboxState extends State<Inbox> {
                       size: 20,
                     ),
                   ),
-                )
+                ),
+                //SizeBox
+                SizedBox(width: 15),
               ]),
             ),
           ),
