@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:signal_private_messenger/Luqman/Models.dart';
 
 class Inbox extends StatefulWidget {
   const Inbox({super.key});
@@ -11,6 +12,14 @@ class Inbox extends StatefulWidget {
 }
 
 class _InboxState extends State<Inbox> {
+  List<ChatMessage> messages = [
+    ChatMessage(messageContent: "Hello Luqman", messageType: "receiver"),
+    ChatMessage(messageContent: "How are you", messageType: "Sender"),
+    ChatMessage(messageContent: "I am Fine THX", messageType: "receiver"),
+    ChatMessage(messageContent: "Where Are you", messageType: "Sender"),
+    ChatMessage(messageContent: "At work MR.Luqman", messageType: "receiver")
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -74,6 +83,7 @@ class _InboxState extends State<Inbox> {
           ),
         ],
       ),
+      //body: ,
     ));
   }
 }
