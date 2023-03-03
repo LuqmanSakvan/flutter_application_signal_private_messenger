@@ -165,6 +165,12 @@ class _InboxState extends State<Inbox> {
                         border: InputBorder.none),
                   ),
                 ),
+
+                //
+                //SizeBox
+                SizedBox(
+                  width: 15,
+                ),
               ]),
             ),
           ),
