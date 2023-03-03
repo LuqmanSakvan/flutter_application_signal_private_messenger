@@ -156,6 +156,15 @@ class _InboxState extends State<Inbox> {
                 ),
                 //SizeBox
                 SizedBox(width: 15),
+
+                Expanded(
+                  child: TextField(
+                    decoration: InputDecoration(
+                        hintText: "Write Your Message",
+                        hintStyle: TextStyle(color: Colors.black54),
+                        border: InputBorder.none),
+                  ),
+                ),
               ]),
             ),
           ),
