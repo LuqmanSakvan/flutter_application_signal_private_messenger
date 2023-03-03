@@ -126,7 +126,17 @@ class _InboxState extends State<Inbox> {
                 ),
               );
             },
-          )
+          ),
+          //below part(TextField,icon(Add,Send))
+          Align(
+            alignment: Alignment.bottomLeft,
+            child: Container(
+              padding: EdgeInsets.only(left: 10.0, bottom: 10.0, top: 10.0),
+              height: 60,
+              width: double.infinity,
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
     ));
