@@ -171,6 +171,15 @@ class _InboxState extends State<Inbox> {
                 SizedBox(
                   width: 15,
                 ),
+
+                //
+                //Button Send
+                FloatingActionButton(
+                  onPressed: () {},
+                  child: Icon(Icons.send, color: Colors.white, size: 18),
+                  backgroundColor: Colors.lightBlue,
+                  elevation: 1,
+                ),
               ]),
             ),
           ),
