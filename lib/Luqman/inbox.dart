@@ -14,10 +14,19 @@ class Inbox extends StatefulWidget {
 class _InboxState extends State<Inbox> {
   List<ChatMessage> messages = [
     ChatMessage(messageContent: "Hello Luqman", messageType: "receiver"),
-    ChatMessage(messageContent: "How are you", messageType: "Sender"),
-    ChatMessage(messageContent: "I am Fine THX", messageType: "receiver"),
-    ChatMessage(messageContent: "Where Are you", messageType: "Sender"),
-    ChatMessage(messageContent: "At work MR.Luqman", messageType: "receiver")
+    ChatMessage(messageContent: "Hey,How are you", messageType: "Sender"),
+    ChatMessage(messageContent: "I am Fine Thanks", messageType: "receiver"),
+    ChatMessage(messageContent: "What Do you do", messageType: "Sender"),
+    ChatMessage(
+        messageContent: "Working on cerate new app", messageType: "receiver"),
+    ChatMessage(
+        messageContent: "Wow,that is cool,which app", messageType: "Sender"),
+    ChatMessage(
+        messageContent: "Signal Private Message", messageType: "receiver"),
+    ChatMessage(
+        messageContent: "yea that is good new app", messageType: "Sender"),
+    ChatMessage(messageContent: "right it is new app", messageType: "receiver"),
+    ChatMessage(messageContent: "ok,so now i am busy", messageType: "Sender"),
   ];
 
   @override
