@@ -29,6 +29,17 @@ class _SearchScreenState extends State<SearchScreen> {
   } 
 }
 class  MySearchDelegate extends  SearchDelegate{
+  List<String> searchResults =[
+'Barazil',
+'china',
+'India',
+'Russia',
+'USA',
+'Maldif',
+'London',
+'NewYourk',
+'Canada',
+  ];
   @override
   List<Widget>? buildActions(BuildContext context) => [
     IconButton(onPressed: (){
@@ -55,19 +66,16 @@ child: Text(query,
 style: const TextStyle(fontSize: 64, fontWeight: FontWeight.bold),
     ),
   );
-    
-  
 
   @override
   Widget buildSuggestions(BuildContext context) {
-List<String> suggestions = [
-'Apple',
-'Pizza',
-'Benena',
-'salat',
-'Tea',
-'Coffe',
-];
+List<String> suggestions = searchResults.where((searchResult) {
+final result =searchResult.toLowerCase();
+final input=query.toLowerCase();
+return result.contains(input);
+}).toList();
+
+
 
 return ListView.builder(
   itemCount: suggestions.length,
