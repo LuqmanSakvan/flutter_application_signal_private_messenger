@@ -66,7 +66,9 @@ List<String> suggestions = [
 return ListView.builder(
   itemCount: suggestions.length,
   itemBuilder:(context, index) {
-    final suggestions = suggestions.[index];
+    final suggestion = suggestions.[index];
+
+    
   },
    );
   }
