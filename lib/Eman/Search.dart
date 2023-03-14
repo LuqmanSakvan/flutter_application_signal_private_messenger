@@ -62,5 +62,12 @@ List<String> suggestions = [
 'Tea',
 'Coffe',
 ];
+
+return ListView.builder(
+  itemCount: suggestions.length,
+  itemBuilder:(context, index) {
+    final suggestions = suggestions.[index];
+  },
+   );
   }
 }
