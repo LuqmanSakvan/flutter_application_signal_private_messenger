@@ -68,7 +68,10 @@ return ListView.builder(
   itemBuilder:(context, index) {
     final suggestion = suggestions.[index];
 
-    
+    return ListTile(
+      title: Text(suggestion),
+      onTap: () {},
+    );
   },
    );
   }
