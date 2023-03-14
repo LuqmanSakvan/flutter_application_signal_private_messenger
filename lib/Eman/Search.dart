@@ -17,10 +17,38 @@ class _SearchScreenState extends State<SearchScreen> {
       title:Text("Search",style: TextStyle(color: Colors.black,
         fontSize: 24,fontWeight: FontWeight.bold),),
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.search),
+          IconButton(onPressed: () {
+            showSearch(context:context , delegate: MySearchDelegate(),);
+          }, icon: const Icon(Icons.search),
           color: Colors.black,)
         ],
       ),
      );
+  } 
+}
+class  MySearchDelegate extends  SearchDelegate{
+  @override
+  List<Widget>? buildActions(BuildContext context) {
+    // TODO: implement buildActions
+    throw UnimplementedError();
   }
+
+  @override
+  Widget? buildLeading(BuildContext context) {
+    // TODO: implement buildLeading
+    throw UnimplementedError();
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    // TODO: implement buildResults
+    throw UnimplementedError();
+  }
+
+  @override
+  Widget buildSuggestions(BuildContext context) {
+    // TODO: implement buildSuggestions
+    throw UnimplementedError();
+  }
+  
 }
