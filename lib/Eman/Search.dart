@@ -48,7 +48,7 @@ class  MySearchDelegate extends  SearchDelegate{
   
 
   @override
-  Widget buildResults(BuildContext context) =>
+  Widget buildResults(BuildContext context) => Center();
     
   
 
