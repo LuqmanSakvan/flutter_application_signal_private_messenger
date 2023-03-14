@@ -15,6 +15,12 @@ class _SearchScreenState extends State<SearchScreen> {
     return Scaffold(appBar: AppBar(
       backgroundColor: Colors.white,
       title:Text("Search",style: TextStyle(color: Colors.black,
-        fontSize: 24,fontWeight: FontWeight.bold),),),);
+        fontSize: 24,fontWeight: FontWeight.bold),),
+        actions: [
+          IconButton(onPressed: () {}, icon: const Icon(Icons.search),
+          color: Colors.black,)
+        ],
+      ),
+     );
   }
 }
