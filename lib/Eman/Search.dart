@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -48,7 +50,11 @@ class  MySearchDelegate extends  SearchDelegate{
   
 
   @override
-  Widget buildResults(BuildContext context) => Center();
+  Widget buildResults(BuildContext context) => Center(
+child: Text(query,
+style: const TextStyle(fontSize: 64, fontWeight: FontWeight.bold),
+    ),
+  );
     
   
 
