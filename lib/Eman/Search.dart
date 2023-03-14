@@ -29,7 +29,13 @@ class _SearchScreenState extends State<SearchScreen> {
 class  MySearchDelegate extends  SearchDelegate{
   @override
   List<Widget>? buildActions(BuildContext context) => [
-    IconButton(onPressed: (){query='';}, 
+    IconButton(onPressed: (){
+      if (query.isEmpty){
+        close(context, null); // close searchbar
+      }
+      else{
+      query='';}
+      }, 
     icon: const Icon(Icons.clear),
     ),
   ];
