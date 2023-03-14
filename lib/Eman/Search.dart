@@ -54,8 +54,13 @@ class  MySearchDelegate extends  SearchDelegate{
 
   @override
   Widget buildSuggestions(BuildContext context) {
-    // TODO: implement buildSuggestions
-    throw UnimplementedError();
+List<String> suggestions = [
+'Apple',
+'Pizza',
+'Benena',
+'salat',
+'Tea',
+'Coffe',
+];
   }
-  
 }
