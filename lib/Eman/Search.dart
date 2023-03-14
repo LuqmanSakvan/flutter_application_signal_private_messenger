@@ -29,7 +29,7 @@ class _SearchScreenState extends State<SearchScreen> {
 class  MySearchDelegate extends  SearchDelegate{
   @override
   List<Widget>? buildActions(BuildContext context) => [
-    IconButton(onPressed: (){}, 
+    IconButton(onPressed: (){query='';}, 
     icon: const Icon(Icons.clear),
     ),
   ];
