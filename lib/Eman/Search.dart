@@ -48,10 +48,9 @@ class  MySearchDelegate extends  SearchDelegate{
   
 
   @override
-  Widget buildResults(BuildContext context) {
-    // TODO: implement buildResults
-    throw UnimplementedError();
-  }
+  Widget buildResults(BuildContext context) => Container() ;
+    
+  
 
   @override
   Widget buildSuggestions(BuildContext context) {
