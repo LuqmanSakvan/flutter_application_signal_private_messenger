@@ -70,7 +70,9 @@ return ListView.builder(
 
     return ListTile(
       title: Text(suggestion),
-      onTap: () {},
+      onTap: () {
+        query=suggestion;
+      },
     );
   },
    );
