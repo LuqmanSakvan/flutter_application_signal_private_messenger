@@ -28,16 +28,18 @@ class _SearchScreenState extends State<SearchScreen> {
 }
 class  MySearchDelegate extends  SearchDelegate{
   @override
-  List<Widget>? buildActions(BuildContext context) {
-    // TODO: implement buildActions
-    throw UnimplementedError();
-  }
-
+  List<Widget>? buildActions(BuildContext context) => [
+    IconButton(onPressed: (){}, 
+    icon: const Icon(Icons.clear),
+    ),
+  ];
   @override
-  Widget? buildLeading(BuildContext context) {
-    // TODO: implement buildLeading
-    throw UnimplementedError();
-  }
+  Widget? buildLeading(BuildContext context) => IconButton(
+    icon: const Icon(Icons.arrow_back),
+    onPressed: () => close(context, null),
+    );
+    
+  
 
   @override
   Widget buildResults(BuildContext context) {
