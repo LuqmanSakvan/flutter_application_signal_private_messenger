@@ -72,6 +72,7 @@ return ListView.builder(
       title: Text(suggestion),
       onTap: () {
         query=suggestion;
+        showResults(context);
       },
     );
   },
