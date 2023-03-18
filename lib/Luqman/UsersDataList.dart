@@ -60,7 +60,7 @@ class _SignalListState extends State<SignalList> {
             ));
           } else
             return (ListView.builder(
-              itemCount: snapshot.data.length,
+              itemCount: userlist.length,
               itemBuilder: (BuildContext context, int index) {
                 return (InkWell(
                   splashColor: getRandomColor(),
