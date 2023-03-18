@@ -29,6 +29,7 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: BottomAppBar(
         child: Container(
           height: 60,
+          child: Row(),
         ),
       ),
     );
