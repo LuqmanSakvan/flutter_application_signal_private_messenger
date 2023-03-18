@@ -50,6 +50,7 @@ class _HomeState extends State<Home> {
                         Icon(
                           Icons.dashboard,
                           size: 35,
+                          color: currentTab == 0 ? Colors.blue : Colors.grey,
                         ),
                       ],
                     ),
