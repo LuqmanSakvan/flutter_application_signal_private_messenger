@@ -26,6 +26,7 @@ class _HomeState extends State<Home> {
         child: currentScreen,
         bucket: bucket,
       ),
+      bottomNavigationBar: BottomAppBar(),
     );
   }
 }
