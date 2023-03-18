@@ -9,6 +9,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  int currentTab = 0;
   @override
   Widget build(BuildContext context) {
     return Container();
