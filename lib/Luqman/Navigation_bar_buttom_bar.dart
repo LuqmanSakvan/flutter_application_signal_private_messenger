@@ -71,7 +71,12 @@ class _HomeState extends State<Home> {
                     },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [Icon(Icons.circle)],
+                      children: [
+                        Icon(
+                          Icons.circle,
+                          size: 35,
+                        )
+                      ],
                     ),
                   ),
                 ],
