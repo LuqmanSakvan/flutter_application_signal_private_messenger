@@ -17,6 +17,8 @@ class _HomeState extends State<Home> {
 
   final PageStorageBucket bucket = PageStorageBucket();
 
+  Widget currentScreen = Myhome();
+
   @override
   Widget build(BuildContext context) {
     return Container();
