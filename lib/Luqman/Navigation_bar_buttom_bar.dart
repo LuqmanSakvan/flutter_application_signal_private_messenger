@@ -31,7 +31,9 @@ class _HomeState extends State<Home> {
           height: 60,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[],
+            children: <Widget>[
+              //left tab bar icon
+            ],
           ),
         ),
       ),
