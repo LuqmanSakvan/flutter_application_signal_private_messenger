@@ -66,6 +66,7 @@ class _HomeState extends State<Home> {
                     onPressed: () {
                       setState(() {
                         currentScreen = Myhome();
+                        currentTab = 1;
                       });
                     },
                   ),
