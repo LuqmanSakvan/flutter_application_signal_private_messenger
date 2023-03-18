@@ -24,6 +24,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: PageStorage(
         child: currentScreen,
+        bucket: bucket,
       ),
     );
   }
