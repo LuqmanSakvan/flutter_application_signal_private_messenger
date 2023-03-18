@@ -33,6 +33,7 @@ class _HomeState extends State<Home> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
               //left tab bar icon
+              Row()
             ],
           ),
         ),
