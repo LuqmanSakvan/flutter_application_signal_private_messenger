@@ -54,6 +54,9 @@ class _HomeState extends State<Home> {
                         ),
                         Text(
                           "Dashboard",
+                          style: TextStyle(
+                            color: currentTab == 0 ? Colors.blue : Colors.grey,
+                          ),
                         )
                       ],
                     ),
