@@ -49,6 +49,7 @@ class _HomeState extends State<Home> {
                       children: [
                         Icon(
                           Icons.dashboard,
+                          size: 35,
                         ),
                       ],
                     ),
