@@ -72,9 +72,8 @@ class _SignalListState extends State<SignalList> {
                     child: ListTile(
                       leading: CircleAvatar(
                         backgroundColor: getRandomColor(),
-                        child: Text(snapshot.data[index].name
-                            .subString(0, 2)
-                            .toUpperCase()),
+                        child: Text(
+                            userlist[index].name.substring(0, 2).toUpperCase()),
                       ),
                       title: Text(snapshot.data[index].name),
                       subtitle: Text(
