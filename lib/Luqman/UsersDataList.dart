@@ -75,9 +75,9 @@ class _SignalListState extends State<SignalList> {
                         child: Text(
                             userlist[index].name.substring(0, 2).toUpperCase()),
                       ),
-                      title: Text(snapshot.data[index].name),
+                      title: Text(userlist[index].name),
                       subtitle: Text(
-                        '${snapshot.data[index].name} is on Signal',
+                        '${userlist[index].name} is on Signal',
                         style: TextStyle(fontSize: 12.0),
                       ),
                       trailing: new Column(
