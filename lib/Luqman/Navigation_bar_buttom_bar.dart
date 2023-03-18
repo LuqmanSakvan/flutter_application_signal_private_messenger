@@ -44,7 +44,9 @@ class _HomeState extends State<Home> {
                         currentTab = 0;
                       });
                     },
-                    child: Column(),
+                    child: Column(
+                      children: [],
+                    ),
                   )
                 ],
               )
