@@ -52,6 +52,9 @@ class _HomeState extends State<Home> {
                           size: 35,
                           color: currentTab == 0 ? Colors.blue : Colors.grey,
                         ),
+                        Text(
+                          "Dashboard",
+                        )
                       ],
                     ),
                   )
