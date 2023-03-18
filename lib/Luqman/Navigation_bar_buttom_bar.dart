@@ -39,7 +39,9 @@ class _HomeState extends State<Home> {
                   MaterialButton(
                     minWidth: 40,
                     onPressed: () {
-                      setState(() {});
+                      setState(() {
+                        currentScreen = Myhome();
+                      });
                     },
                   )
                 ],
