@@ -37,6 +37,7 @@ class _HomeState extends State<Home> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   MaterialButton(
+                    minWidth: 40,
                     onPressed: () {
                       setState(() {});
                     },
