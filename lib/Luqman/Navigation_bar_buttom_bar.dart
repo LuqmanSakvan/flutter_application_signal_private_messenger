@@ -35,6 +35,7 @@ class _HomeState extends State<Home> {
               //left tab bar icon
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                children: [],
               )
             ],
           ),
