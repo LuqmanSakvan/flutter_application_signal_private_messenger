@@ -76,7 +76,8 @@ class _HomeState extends State<Home> {
                           Icons.circle,
                           size: 35,
                           color: currentTab == 1 ? Colors.blue : Colors.grey,
-                        )
+                        ),
+                        Text("Story")
                       ],
                     ),
                   ),
