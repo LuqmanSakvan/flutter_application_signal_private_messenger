@@ -17,7 +17,8 @@ class _SearchScreenState extends State<SearchScreen> {
     return Scaffold(appBar: AppBar(
       backgroundColor: Colors.white,
       title:Text("Search",style: TextStyle(color: Colors.black,
-        fontSize: 24,fontWeight: FontWeight.bold),),
+        fontSize: 24,fontWeight: FontWeight.bold),
+        ),
         actions: [
           IconButton(onPressed: () {
             showSearch(context:context , delegate: MySearchDelegate(),);
@@ -41,14 +42,17 @@ class  MySearchDelegate extends  SearchDelegate{
 'Canada',
 'dlhi',
   ];
+
   @override
   List<Widget>? buildActions(BuildContext context) => [
     IconButton(onPressed: (){
       if (query.isEmpty){
         close(context, null); // close searchbar
       }
-      else{
-      query='';}
+      else
+      {
+      query='';
+      }
       }, 
     icon: const Icon(Icons.clear),
     ),
