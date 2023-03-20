@@ -60,7 +60,7 @@ class _SignalListState extends State<SignalList> {
             ));
           } else
             return (ListView.builder(
-              itemCount: snapshot.data.length,
+              itemCount: userlist.length,
               itemBuilder: (BuildContext context, int index) {
                 return (InkWell(
                   splashColor: getRandomColor(),
@@ -72,13 +72,12 @@ class _SignalListState extends State<SignalList> {
                     child: ListTile(
                       leading: CircleAvatar(
                         backgroundColor: getRandomColor(),
-                        child: Text(snapshot.data[index].name
-                            .subString(0, 2)
-                            .toUpperCase()),
+                        child: Text(
+                            userlist[index].name.substring(0, 2).toUpperCase()),
                       ),
-                      title: Text(snapshot.data[index].name),
+                      title: Text(userlist[index].name),
                       subtitle: Text(
-                        '${snapshot.data[index].name} is on Signal',
+                        '${userlist[index].name} is on Signal',
                         style: TextStyle(fontSize: 12.0),
                       ),
                       trailing: new Column(
