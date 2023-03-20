@@ -14,6 +14,7 @@ class _ListUIState extends State<ListUI> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar( leading: IconButton(icon: Icon(Icons.arrow_back),
+      color: Colors.black,
       onPressed: () {},),
     title:Text("Appearance",style: TextStyle(color: Colors.black,fontSize: 24),),
     backgroundColor: Colors.white,)
