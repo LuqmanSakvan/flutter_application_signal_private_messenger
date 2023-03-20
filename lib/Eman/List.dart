@@ -21,8 +21,6 @@ class _ListUIState extends State<ListUI> {
     backgroundColor: Colors.white,
     ),
 
-    
-
     );
   }
 }
