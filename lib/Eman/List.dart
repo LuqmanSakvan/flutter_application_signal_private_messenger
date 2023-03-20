@@ -12,6 +12,6 @@ class ListUI extends StatefulWidget {
 class _ListUIState extends State<ListUI> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(appBar: AppBar(),);
   }
 }
