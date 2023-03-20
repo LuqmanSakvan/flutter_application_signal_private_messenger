@@ -12,6 +12,7 @@ class ListUI extends StatefulWidget {
 class _ListUIState extends State<ListUI> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text("Appearance"),),);
+    return Scaffold(appBar: AppBar(title: Text("Appearance"),
+    backgroundColor: Colors.white,),);
   }
 }
