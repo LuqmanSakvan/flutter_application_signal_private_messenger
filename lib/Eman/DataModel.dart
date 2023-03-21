@@ -12,5 +12,7 @@ List<User_D_M>myuserlist=[
   , sub_name:"System defult"),
    User_D_M(name:"Chat color & wallpaper" 
   , sub_name:""),
+  User_D_M(name:"Message font size" 
+  , sub_name:"Normal"),
   
 ];
