@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home:SearchScreen(),
-      home: Home(),
+      home: SearchScreen(),
     );
   }
 }
