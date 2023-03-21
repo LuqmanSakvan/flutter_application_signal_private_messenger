@@ -27,8 +27,10 @@ class Myhome extends StatelessWidget {
             color: Colors.black,
             onPressed: () {
               Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SearchScreen()));},
+                  MaterialPageRoute(builder: (context) => SearchScreen()));
+            },
           ),
+          //Work here for PopUp Menu Item
           IconButton(
             icon: Icon(
               Icons.more_vert,
