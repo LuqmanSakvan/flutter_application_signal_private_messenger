@@ -38,6 +38,7 @@ class Myhome extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.group,
+                      color: Colors.black,
                     )
                   ],
                 ),
