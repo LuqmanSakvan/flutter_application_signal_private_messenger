@@ -17,7 +17,9 @@ class ListUI extends StatelessWidget {
     backgroundColor: Colors.white,
     ),
      body: ListView.builder(itemCount: myuserlist.length,
-      itemBuilder: itemBuilder),
+      itemBuilder: (context, index) {
+        
+      }),
     );
   }
 }
