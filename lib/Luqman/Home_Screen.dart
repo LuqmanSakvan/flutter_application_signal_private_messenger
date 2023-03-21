@@ -86,7 +86,7 @@ class Myhome extends StatelessWidget {
               ),
               PopupMenuItem(
                   child: Row(
-                children: [],
+                children: [Icon(Icons.notifications)],
               ))
             ],
           ),
