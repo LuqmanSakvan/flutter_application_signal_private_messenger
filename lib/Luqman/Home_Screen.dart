@@ -49,7 +49,12 @@ class Myhome extends StatelessWidget {
               ),
               PopupMenuItem(
                 child: Row(
-                  children: [Icon(Icons.mark_chat_read)],
+                  children: [
+                    Icon(
+                      Icons.mark_chat_read,
+                      color: Colors.black,
+                    )
+                  ],
                 ),
               )
             ],
