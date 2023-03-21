@@ -26,3 +26,9 @@ class ListUI extends StatelessWidget {
     );
   }
 }
+/*
+ The ListTile widget contains a Title, Subtitle, Leading Icon, 
+ and Trailing Icon. The ListTile widget is typically used 
+ to populate a ListView. For example, you can use the ListTile 
+ to show a list of To Do items or emails.
+ */
