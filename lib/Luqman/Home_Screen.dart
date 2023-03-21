@@ -35,7 +35,11 @@ class Myhome extends StatelessWidget {
             itemBuilder: (context) => [
               PopupMenuItem(
                 child: Row(
-                  children: [],
+                  children: [
+                    Icon(
+                      Icons.group,
+                    )
+                  ],
                 ),
               )
             ],
