@@ -37,4 +37,9 @@ List<UserData> userlist = [
     email: "Luqman@example.com",
     phone: '0750555555',
   ),
+  UserData(
+    name: "Haya Amedi",
+    email: "Haya@example.com",
+    phone: '0750555555',
+  ),
 ];
