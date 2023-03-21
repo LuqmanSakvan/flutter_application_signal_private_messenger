@@ -90,6 +90,9 @@ class Myhome extends StatelessWidget {
                   Icon(
                     Icons.notifications,
                     color: Colors.black,
+                  ),
+                  SizedBox(
+                    height: 10,
                   )
                 ],
               ))
