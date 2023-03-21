@@ -20,9 +20,12 @@ class ListUI extends StatelessWidget {
       itemBuilder: (context, index) {
         return ListTile(
           title: Text(myuserlist[index].name,style: TextStyle(
-            fontSize: 22,
+            fontSize: 20,
           ),),
-          subtitle: Text(myuserlist[index].sub_name!.toString(),),
+          subtitle: Text(myuserlist[index].sub_name!.toString(),
+          style: TextStyle(
+            fontSize: 16,
+          ),),
         );
       }),
     );
