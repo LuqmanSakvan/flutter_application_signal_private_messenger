@@ -71,7 +71,9 @@ class Myhome extends StatelessWidget {
                 ]),
               ),
               PopupMenuItem(
-                child: Row(),
+                child: Row(
+                  children: [],
+                ),
               )
             ],
           ),
