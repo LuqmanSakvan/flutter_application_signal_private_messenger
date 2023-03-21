@@ -3,14 +3,9 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:signal_private_messenger/Luqman/Models.dart';
 
-class ListUI extends StatefulWidget {
+class ListUI extends StatelessWidget {
   const ListUI({super.key});
 
-  @override
-  State<ListUI> createState() => _ListUIState();
-}
-
-class _ListUIState extends State<ListUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
