@@ -53,6 +53,9 @@ class Myhome extends StatelessWidget {
                     Icon(
                       Icons.mark_chat_read,
                       color: Colors.black,
+                    ),
+                    SizedBox(
+                      height: 10,
                     )
                   ],
                 ),
