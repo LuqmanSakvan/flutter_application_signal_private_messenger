@@ -86,7 +86,12 @@ class Myhome extends StatelessWidget {
               ),
               PopupMenuItem(
                   child: Row(
-                children: [Icon(Icons.notifications)],
+                children: [
+                  Icon(
+                    Icons.notifications,
+                    color: Colors.black,
+                  )
+                ],
               ))
             ],
           ),
