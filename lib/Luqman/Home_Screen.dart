@@ -75,6 +75,7 @@ class Myhome extends StatelessWidget {
                   children: [
                     Icon(
                       Icons.settings,
+                      color: Colors.black,
                     )
                   ],
                 ),
