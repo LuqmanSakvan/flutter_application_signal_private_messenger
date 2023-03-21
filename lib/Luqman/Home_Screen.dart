@@ -47,7 +47,9 @@ class Myhome extends StatelessWidget {
                   ],
                 ),
               ),
-              PopupMenuItem()
+              PopupMenuItem(
+                child: Row(),
+              )
             ],
           ),
           IconButton(
