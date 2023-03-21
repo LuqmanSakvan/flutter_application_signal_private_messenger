@@ -14,12 +14,13 @@ class SearchScreen extends StatefulWidget {
 class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(leading: IconButton(icon: Icon(Icons.arrow_back),
+    return Scaffold(appBar: AppBar(
+      leading: IconButton(icon: Icon(Icons.arrow_back),
       color: Colors.black,
       onPressed: () {
         Navigator.pop(context);
       },),
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.grey,
       title:Text("Search",style: TextStyle(color: Colors.black,
         fontSize: 24,fontWeight: FontWeight.bold),
         ),
