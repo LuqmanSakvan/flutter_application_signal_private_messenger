@@ -78,7 +78,7 @@ class Myhome extends StatelessWidget {
                             color: Colors.black,
                           ),
                           SizedBox(
-                            height: 10,
+                            width: 10,
                           ),
                           Text("Settings")
                         ],
