@@ -19,7 +19,7 @@ class ListUI extends StatelessWidget {
      body: ListView.builder(itemCount: myuserlist.length,
       itemBuilder: (context, index) {
         return ListTile(
-          title: Text(myuserlist[index].name),
+          title: Text(myuserlist[index].name,style: TextStyle(),),
           subtitle: Text(myuserlist[index].sub_name!.toString()),
         );
       }),
