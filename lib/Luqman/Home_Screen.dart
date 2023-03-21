@@ -32,81 +32,78 @@ class Myhome extends StatelessWidget {
           ),
           //Work here for PopUp Menu Item
           PopupMenuButton(
-            itemBuilder: (context) => [
-              PopupMenuItem(
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.group,
-                      color: Colors.black,
+              itemBuilder: (context) => [
+                    PopupMenuItem(
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.group,
+                            color: Colors.black,
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text("New Group"),
+                        ],
+                      ),
                     ),
-                    SizedBox(
-                      height: 10,
+                    PopupMenuItem(
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.mark_chat_read,
+                            color: Colors.black,
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text("Mark all read"),
+                        ],
+                      ),
                     ),
-                    Text("New Group"),
+                    PopupMenuItem(
+                      child: Row(children: [
+                        Icon(Icons.plus_one),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text("Invite Friends"),
+                      ]),
+                    ),
+                    PopupMenuItem(
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.settings,
+                            color: Colors.black,
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text("Settings")
+                        ],
+                      ),
+                    ),
+                    PopupMenuItem(
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.notifications,
+                            color: Colors.black,
+                          ),
+                          SizedBox(
+                            height: 10,
+                          ),
+                          Text("Notification profile"),
+                        ],
+                      ),
+                    )
                   ],
-                ),
-              ),
-              PopupMenuItem(
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mark_chat_read,
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text("Mark all read"),
-                  ],
-                ),
-              ),
-              PopupMenuItem(
-                child: Row(children: [
-                  Icon(Icons.plus_one),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Text("Invite Friends"),
-                ]),
-              ),
-              PopupMenuItem(
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.settings,
-                      color: Colors.black,
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text("Settings")
-                  ],
-                ),
-              ),
-              PopupMenuItem(
-                  child: Row(
-                children: [
-                  Icon(
-                    Icons.notifications,
-                    color: Colors.black,
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  Text("Notification profile"),
-                ],
-              ))
-            ],
-          ),
-          IconButton(
-            icon: Icon(
-              Icons.more_vert,
-              size: 30,
-            ),
-            color: Colors.black,
-            onPressed: () {},
-          )
+              child: Icon(
+                Icons.more_vert,
+                size: 30,
+                color: Colors.black,
+              )),
         ],
       ),
       body: UsersList(),
