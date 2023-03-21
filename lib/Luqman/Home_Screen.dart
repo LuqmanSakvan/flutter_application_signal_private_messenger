@@ -83,7 +83,8 @@ class Myhome extends StatelessWidget {
                     Text("Settings")
                   ],
                 ),
-              )
+              ),
+              PopupMenuItem(child: Row())
             ],
           ),
           IconButton(
