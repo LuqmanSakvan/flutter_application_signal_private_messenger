@@ -20,6 +20,7 @@ class ListUI extends StatelessWidget {
       itemBuilder: (context, index) {
         return ListTile(
           title: Text(myuserlist[index].name),
+          subtitle: Text(myuserlist[index].sub_name),
         );
       }),
     );
