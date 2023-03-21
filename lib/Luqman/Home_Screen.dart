@@ -76,6 +76,9 @@ class Myhome extends StatelessWidget {
                     Icon(
                       Icons.settings,
                       color: Colors.black,
+                    ),
+                    SizedBox(
+                      height: 10,
                     )
                   ],
                 ),
