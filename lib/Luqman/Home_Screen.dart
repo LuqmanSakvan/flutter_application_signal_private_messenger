@@ -93,7 +93,8 @@ class Myhome extends StatelessWidget {
                   ),
                   SizedBox(
                     height: 10,
-                  )
+                  ),
+                  Text("Notification profile"),
                 ],
               ))
             ],
