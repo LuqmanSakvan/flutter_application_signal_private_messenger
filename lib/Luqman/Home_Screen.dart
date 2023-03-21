@@ -64,6 +64,9 @@ class Myhome extends StatelessWidget {
               PopupMenuItem(
                 child: Row(children: [
                   Icon(Icons.plus_one),
+                  SizedBox(
+                    height: 10,
+                  )
                 ]),
               )
             ],
