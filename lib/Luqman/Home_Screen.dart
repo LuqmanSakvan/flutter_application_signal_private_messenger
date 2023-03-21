@@ -63,7 +63,10 @@ class Myhome extends StatelessWidget {
                     ),
                     PopupMenuItem(
                       child: Row(children: [
-                        Icon(Icons.plus_one),
+                        Icon(
+                          Icons.add,
+                          color: Colors.black,
+                        ),
                         SizedBox(
                           width: 10,
                         ),
