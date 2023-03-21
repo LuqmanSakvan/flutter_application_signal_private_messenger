@@ -15,17 +15,13 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(
-      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.only(
-       topLeft: Radius.circular(25), topRight: Radius.circular(25),
-      bottomRight: Radius.circular(25), bottomLeft: Radius.circular(25)
-      ),
-        ),
+      
       leading: IconButton(icon: Icon(Icons.arrow_back),
       color: Colors.black,
       onPressed: () {
         Navigator.pop(context);
       },),
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.white,
       title:Text("Search",style: TextStyle(color: Colors.black,
         fontSize: 24,fontWeight: FontWeight.bold),
         ),
