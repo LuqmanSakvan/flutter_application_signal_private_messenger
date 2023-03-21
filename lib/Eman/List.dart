@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:signal_private_messenger/Eman/DataModel.dart';
 import 'package:signal_private_messenger/Luqman/Models.dart';
 
 class ListUI extends StatelessWidget {
@@ -15,7 +16,8 @@ class ListUI extends StatelessWidget {
     title:Text("Appearance",style: TextStyle(color: Colors.black,fontSize: 24),),
     backgroundColor: Colors.white,
     ),
-
+     body: ListView.builder(
+      itemBuilder: itemBuilder),
     );
   }
 }
