@@ -69,6 +69,9 @@ class Myhome extends StatelessWidget {
                   ),
                   Text("Invite Friends"),
                 ]),
+              ),
+              PopupMenuItem(
+                child: Row(),
               )
             ],
           ),
