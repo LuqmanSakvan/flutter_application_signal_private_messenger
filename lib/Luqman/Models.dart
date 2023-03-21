@@ -52,4 +52,34 @@ List<UserData> userlist = [
     email: "Rondk@example.com",
     phone: '0750555555',
   ),
+  UserData(
+    name: "Lana Rekani",
+    email: "Rondk@example.com",
+    phone: '0750555555',
+  ),
+  UserData(
+    name: "Banaz Rekani",
+    email: "Rondk@example.com",
+    phone: '0750555555',
+  ),
+  UserData(
+    name: "Lole Brifkani",
+    email: "Rondk@example.com",
+    phone: '0750555555',
+  ),
+  UserData(
+    name: "Nazdar Bamarni",
+    email: "Rondk@example.com",
+    phone: '0750555555',
+  ),
+  UserData(
+    name: "Dldar Duhoki",
+    email: "Rondk@example.com",
+    phone: '0750555555',
+  ),
+  UserData(
+    name: "Louzia Akri",
+    email: "Rondk@example.com",
+    phone: '0750555555',
+  ),
 ];
