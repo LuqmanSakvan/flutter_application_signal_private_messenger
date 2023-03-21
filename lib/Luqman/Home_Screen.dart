@@ -65,7 +65,7 @@ class Myhome extends StatelessWidget {
                       child: Row(children: [
                         Icon(Icons.plus_one),
                         SizedBox(
-                          height: 10,
+                          width: 10,
                         ),
                         Text("Invite Friends"),
                       ]),
