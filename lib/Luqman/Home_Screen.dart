@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signal_private_messenger/Eman/Search.dart';
 import 'package:signal_private_messenger/Luqman/UsersDataList.dart';
 
 class Myhome extends StatelessWidget {
@@ -24,7 +25,9 @@ class Myhome extends StatelessWidget {
               size: 30,
             ),
             color: Colors.black,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SearchScreen()));},
           ),
           IconButton(
             icon: Icon(
