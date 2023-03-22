@@ -90,7 +90,12 @@ class _ContactsScreenState extends State<ContactsScreen> {
     body:Column(
       children: [
         TextField(
-          
+          // onChanged: (value) =>_runFilter(value),
+          decoration: InputDecoration(
+            contentPadding: 
+            const EdgeInsets.symmetric(vertical:10.0,horizontal: 15),
+            hintText: "Search name or number",
+          ),
         ),
       ],
     ),
