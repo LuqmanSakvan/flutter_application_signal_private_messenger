@@ -90,8 +90,12 @@ final List<Map<String, dynamic>> _allUsers = [
     super.initState();
   }
 // Now we will create a function to be called whenever the TextField changes 
-void _txtfieldFilter(){
+void _txtfieldFilter(String enterKeyword){
    List<Map<String, dynamic>> results = [];
+if(enterKeyword.isEmpty){
+  // if the search field is empty or only contains white-space, All users will be displayed 
+results = _allUsers;
+}
 }
 
 class _ContactsScreenState extends State<ContactsScreen> {
