@@ -95,6 +95,12 @@ void _txtfieldFilter(String enterKeyword){
 if(enterKeyword.isEmpty){
   // if the search field is empty or only contains white-space, All users will be displayed 
 results = _allUsers;
+}else{
+ results = _allUsers
+          .where((user) =>
+              user["name"].toLowerCase().contains(enterKeyword.toLowerCase()))
+          .toList();
+   // we use the toLowerCase() method to make it case-insensitive
 }
 }
 
