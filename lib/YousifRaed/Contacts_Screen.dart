@@ -132,7 +132,7 @@ Expanded(
     ),
   ),
   )
-  :const Text("")
+  :const Text("No Matching results,try with a different search")
 ),
 
       ],
