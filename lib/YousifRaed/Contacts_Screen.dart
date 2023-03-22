@@ -128,9 +128,11 @@ Expanded(
         backgroundColor: Colors.transparent
         ,),
         title: Text(_foundUsers[index]['name']),
+        subtitle: Text('${_foundUsers[index]["Phone"]}'),
     ),
   ),
   ),
+  
 ),
 
       ],
