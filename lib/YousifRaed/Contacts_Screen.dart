@@ -96,7 +96,10 @@ class _ContactsScreenState extends State<ContactsScreen> {
             const EdgeInsets.symmetric(vertical:10.0,horizontal: 15),
             hintText: "Search name or number",
             suffixIcon: const Icon(Icons.search),
-            
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0),
+            borderSide: const BorderSide(),
+            )
+
           ),
         ),
       ],
