@@ -98,10 +98,12 @@ class _ContactsScreenState extends State<ContactsScreen> {
             suffixIcon: const Icon(Icons.search),
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0),
             borderSide: const BorderSide(),
-            )
-
+            ),
           ),
         ),
+const SizedBox(
+  height: 20,
+),
       ],
     ),
     
