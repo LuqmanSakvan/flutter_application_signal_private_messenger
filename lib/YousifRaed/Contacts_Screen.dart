@@ -123,7 +123,11 @@ Expanded(
     child: ListTile(
       leading: CircleAvatar(
         radius: 30.0,
-      ),
+        backgroundImage: 
+        NetworkImage(_foundUsers[index]['image']),
+        backgroundColor: Colors.transparent
+        ,),
+        
     ),
   ),
   ),
