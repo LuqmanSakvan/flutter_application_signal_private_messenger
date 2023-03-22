@@ -119,7 +119,10 @@ Expanded(
   ? ListView.builder(itemCount: _foundUsers.length,
   itemBuilder: (context, index) => Card(
     elevation: 1,
-    
+    margin: const EdgeInsets.symmetric(vertical: 2),
+    child: ListTile(
+      
+    ),
   ),
   ),
 ),
