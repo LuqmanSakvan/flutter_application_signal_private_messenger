@@ -127,7 +127,7 @@ Expanded(
         NetworkImage(_foundUsers[index]['image']),
         backgroundColor: Colors.transparent
         ,),
-        
+        title: Text(_foundUsers[index]['name']),
     ),
   ),
   ),
