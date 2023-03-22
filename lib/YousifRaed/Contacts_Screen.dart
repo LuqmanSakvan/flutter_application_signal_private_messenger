@@ -90,19 +90,24 @@ final List<Map<String, dynamic>> _allUsers = [
     super.initState();
   }
 // Now we will create a function to be called whenever the TextField changes 
-void _txtfieldFilter(String enterKeyword){
-   List<Map<String, dynamic>> results = [];
-if(enterKeyword.isEmpty){
-  // if the search field is empty or only contains white-space, All users will be displayed 
-results = _allUsers;
-}else{
- results = _allUsers
+void _txtfieldFilter(String enteredKeyword) {
+    List<Map<String, dynamic>> results = [];
+    if (enteredKeyword.isEmpty) {
+      // if the search field is empty or only contains white-space, All users will be displayed
+      results = _allUsers;
+    } else {
+      results = _allUsers
           .where((user) =>
-              user["name"].toLowerCase().contains(enterKeyword.toLowerCase()))
+              user["name"].toLowerCase().contains(enteredKeyword.toLowerCase()))
           .toList();
-   // we use the toLowerCase() method to make it case-insensitive
-}
-}
+      // we use the toLowerCase() method to make it case-insensitive
+    }
+
+    // this is for Refreshing the UI
+    setState(() {
+      _foundUsers = results;
+    });
+  }
 
 class _ContactsScreenState extends State<ContactsScreen> {
   @override
