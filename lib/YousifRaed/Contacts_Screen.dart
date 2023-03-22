@@ -114,8 +114,11 @@ class _ContactsScreenState extends State<ContactsScreen> {
 const SizedBox(
   height: 20,
 ),
-Expanded(child: 
-
+Expanded(
+  child: _foundUsers.isNotEmpty
+  ? ListView.builder(itemCount: _foundUsers.length,
+  itemBuilder: (context, index) => 
+  ),
 ),
 
       ],
