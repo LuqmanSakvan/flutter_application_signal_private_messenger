@@ -131,8 +131,8 @@ Expanded(
         subtitle: Text('${_foundUsers[index]["Phone"]}'),
     ),
   ),
-  ),
-  
+  )
+  :const Text("")
 ),
 
       ],
