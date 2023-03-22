@@ -81,6 +81,16 @@ final List<Map<String, dynamic>> _allUsers = [
     },
 
 ];
+// This list holds the data for the list view
+  List<Map<String, dynamic>> _foundUsers = [];
+  @override
+  initState() {
+    // We used to show all the users when u enter the screen
+    _foundUsers = _allUsers;
+    super.initState();
+  }
+
+
 
 class _ContactsScreenState extends State<ContactsScreen> {
   @override
@@ -104,6 +114,7 @@ class _ContactsScreenState extends State<ContactsScreen> {
 const SizedBox(
   height: 20,
 ),
+
       ],
     ),
     
