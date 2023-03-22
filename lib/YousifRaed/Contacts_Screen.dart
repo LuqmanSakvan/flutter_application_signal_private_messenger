@@ -116,6 +116,7 @@ class _ContactsScreenState extends State<ContactsScreen> {
       appBar: AppBar(title: ElevatedButton.icon(onPressed: (() {}), icon:Icon(Icons.arrow_back), label: Text("New Message"))),
     body:Padding(
       padding: const EdgeInsets.all(10),
+      
       child: Column(
         children: [
           TextField(
