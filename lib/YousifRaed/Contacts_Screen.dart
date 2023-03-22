@@ -95,6 +95,8 @@ class _ContactsScreenState extends State<ContactsScreen> {
             contentPadding: 
             const EdgeInsets.symmetric(vertical:10.0,horizontal: 15),
             hintText: "Search name or number",
+            suffixIcon: const Icon(Icons.search),
+            
           ),
         ),
       ],
