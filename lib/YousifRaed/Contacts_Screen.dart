@@ -8,6 +8,10 @@ class ContactsScreen extends StatefulWidget {
   @override
   State<ContactsScreen> createState() => _ContactsScreenState();
 }
+final List<Map<String, dynamic>> _allUsers = [
+
+  
+];
 
 class _ContactsScreenState extends State<ContactsScreen> {
   @override
