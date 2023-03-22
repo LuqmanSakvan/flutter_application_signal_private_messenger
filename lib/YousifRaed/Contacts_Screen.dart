@@ -114,47 +114,50 @@ class _ContactsScreenState extends State<ContactsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: ElevatedButton.icon(onPressed: (() {}), icon:Icon(Icons.arrow_back), label: Text("New Message"))),
-    body:Column(
-      children: [
-        TextField(
-          // onChanged: (value) =>_runFilter(value),
-          decoration: InputDecoration(
-            contentPadding: 
-            const EdgeInsets.symmetric(vertical:10.0,horizontal: 15),
-            hintText: "Search name or number",
-            suffixIcon: const Icon(Icons.search),
-            border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0),
-            borderSide: const BorderSide(),
+    body:Padding(
+      
+      child: Column(
+        children: [
+          TextField(
+            // onChanged: (value) =>_runFilter(value),
+            decoration: InputDecoration(
+              contentPadding: 
+              const EdgeInsets.symmetric(vertical:10.0,horizontal: 15),
+              hintText: "Search name or number",
+              suffixIcon: const Icon(Icons.search),
+              border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0),
+              borderSide: const BorderSide(),
+              ),
             ),
           ),
-        ),
-const SizedBox(
-  height: 20,
-),
-Expanded(
-  child: _foundUsers.isNotEmpty
-  ? ListView.builder(itemCount: _foundUsers.length,
-  itemBuilder: (context, index) => Card(
-    elevation: 1,
-    margin: const EdgeInsets.symmetric(vertical: 2),
-    child: ListTile(
-      leading: CircleAvatar(
-        radius: 30.0,
-        backgroundImage: 
-        NetworkImage(_foundUsers[index]['image']),
-        backgroundColor: Colors.transparent
-        ,),
-        title: Text(_foundUsers[index]['name']),
-        subtitle: Text('${_foundUsers[index]["Phone"]}'),
+    const SizedBox(
+      height: 20,
     ),
-  ),
-  )
-  :const Text("No Matching results,try with a different search",
-  style: TextStyle(fontSize: 24),
-  )
-),
-
-      ],
+    Expanded(
+      child: _foundUsers.isNotEmpty
+      ? ListView.builder(itemCount: _foundUsers.length,
+      itemBuilder: (context, index) => Card(
+      elevation: 1,
+      margin: const EdgeInsets.symmetric(vertical: 2),
+      child: ListTile(
+        leading: CircleAvatar(
+          radius: 30.0,
+          backgroundImage: 
+          NetworkImage(_foundUsers[index]['image']),
+          backgroundColor: Colors.transparent
+          ,),
+          title: Text(_foundUsers[index]['name']),
+          subtitle: Text('${_foundUsers[index]["Phone"]}'),
+      ),
+      ),
+      )
+      :const Text("No Matching results,try with a different search",
+      style: TextStyle(fontSize: 24),
+      )
+    ),
+    
+        ],
+      ),
     ),
     
     );
