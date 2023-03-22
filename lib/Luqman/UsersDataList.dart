@@ -52,7 +52,6 @@ class _SignalListState extends State<SignalList> {
         Colors.primaries[Random().nextInt(Colors.primaries.length)];
     return Container(
       child: FutureBuilder(
-        future: _getUsers(),
         builder: (BuildContext context, AsyncSnapshot snapshot) {
           return (ListView.builder(
             itemCount: userlist.length,
