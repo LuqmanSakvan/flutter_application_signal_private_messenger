@@ -122,7 +122,7 @@ Expanded(
     margin: const EdgeInsets.symmetric(vertical: 2),
     child: ListTile(
       leading: CircleAvatar(
-        
+        radius: 30.0,
       ),
     ),
   ),
