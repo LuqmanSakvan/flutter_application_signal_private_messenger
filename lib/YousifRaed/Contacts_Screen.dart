@@ -90,7 +90,9 @@ final List<Map<String, dynamic>> _allUsers = [
     super.initState();
   }
 // Now we will create a function to be called whenever the TextField changes 
-
+void _txtfieldFilter(){
+  
+}
 
 class _ContactsScreenState extends State<ContactsScreen> {
   @override
