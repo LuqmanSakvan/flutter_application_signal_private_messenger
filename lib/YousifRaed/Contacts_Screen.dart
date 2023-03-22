@@ -91,7 +91,7 @@ final List<Map<String, dynamic>> _allUsers = [
   }
 // Now we will create a function to be called whenever the TextField changes 
 void _txtfieldFilter(){
-  
+   List<Map<String, dynamic>> results = [];
 }
 
 class _ContactsScreenState extends State<ContactsScreen> {
