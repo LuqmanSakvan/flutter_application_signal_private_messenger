@@ -87,6 +87,14 @@ class _ContactsScreenState extends State<ContactsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: ElevatedButton.icon(onPressed: (() {}), icon:Icon(Icons.arrow_back), label: Text("New Message"))),
+    body:Column(
+      children: [
+        TextField(
+          
+        ),
+      ],
+    ),
+    
     );
   }
 }
