@@ -56,7 +56,7 @@ class _SignalListState extends State<SignalList> {
         builder: (BuildContext context, AsyncSnapshot snapshot) {
           if (snapshot.data == null) {
             return (Container(
-              child: Center(child: Text("Load")),
+              child: Center(child: Text("Loading")),
             ));
           } else
             return (ListView.builder(
