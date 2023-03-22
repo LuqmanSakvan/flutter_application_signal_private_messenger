@@ -86,8 +86,7 @@ final List<Map<String, dynamic>> _allUsers = [
   @override
   initState() {
     // We used to show all the users when u enter the screen
-    _foundUsers = _allUsers;
-    super.initState();
+   
   }
 // Now we will create a function to be called whenever the TextField changes 
 void _txtfieldFilter(String enteredKeyword) {
@@ -104,9 +103,7 @@ void _txtfieldFilter(String enteredKeyword) {
     }
 
     // this is for Refreshing the UI
-    setState(() {
-      _foundUsers = results;
-    });
+    
   }
 
 class _ContactsScreenState extends State<ContactsScreen> {
@@ -120,7 +117,7 @@ class _ContactsScreenState extends State<ContactsScreen> {
       child: Column(
         children: [
           TextField(
-            // onChanged: (value) =>_runFilter(value),
+            onChanged: (value) =>_txtfieldFilter(value),
             decoration: InputDecoration(
               contentPadding: 
               const EdgeInsets.symmetric(vertical:10.0,horizontal: 15),
