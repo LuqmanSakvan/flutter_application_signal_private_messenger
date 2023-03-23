@@ -22,7 +22,12 @@ class SettingsPage extends StatelessWidget {
           children: [
             ListTile(
               contentPadding: EdgeInsets.symmetric(horizontal: 10),
-              leading: CircleAvatar(backgroundColor: Colors.blue,),
+              leading: CircleAvatar(backgroundColor: Colors.blue,
+              child: Text(
+                'unkown'[0].toUpperCase(),
+                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32),
+              ),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(15.0),
