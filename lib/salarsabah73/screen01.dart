@@ -45,7 +45,21 @@ class SettingsPage extends StatelessWidget {
                   Text("Linked Device" , style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
                 ],
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.favorite_border_outlined,
+                    color: Colors.red,
+                  ),
+                  SizedBox(width: 10),
+                  Text("Donate to Signal" , style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                ],
+              ),
+            ),
+            
           ],
         ),
       ),
