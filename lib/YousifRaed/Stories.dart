@@ -20,7 +20,9 @@ body: Stack(
     Positioned(top:100,right:340,child:CircleAvatar(child: Icon(Icons.circle),) ),
     Positioned(top:100,left:310,child: Icon(Icons.search)),
     Positioned(top:100,left:350,child: Icon(Icons.menu)),
-    
+    Positioned(left:325,top:565,child: FloatingActionButton(onPressed:(() {} ),child: Icon(Icons.photo_camera),)
+    )
+
   ],
 ),
 
