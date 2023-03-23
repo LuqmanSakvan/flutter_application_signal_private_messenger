@@ -9,7 +9,7 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Settings" , style: TextStyle(fontSize: 24)),
+        title: Text("Settings" , style: TextStyle(fontSize: 26)),
         leading: IconButton(onPressed: () {},
         icon: Icon(
           Icons.arrow_back,
