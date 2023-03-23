@@ -18,12 +18,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-<<<<<<< HEAD
       //home: SearchScreen(),
-      //home: ListUI(),
-=======
-      home: Home(),
->>>>>>> 56ba5e2a19fcee9357d4ba8a3a5f8b815acffd26
+      home: ListUI(),
     );
   }
 }
