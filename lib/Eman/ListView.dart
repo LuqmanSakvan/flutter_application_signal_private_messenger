@@ -24,11 +24,13 @@ class _MyListState extends State<MyList> {
       ),
 
     body: Container(
+padding: const EdgeInsets.all(10),
       child: ListView(
         children: [
           Row(
             children: [
-              Text("Account",)
+              SizedBox(height: 40,),
+              Text("Signal PIN",)
             ],
           ),
         ],
