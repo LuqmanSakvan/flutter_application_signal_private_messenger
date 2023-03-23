@@ -32,6 +32,19 @@ class SettingsPage extends StatelessWidget {
                   Text("Account" ,style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold)),
                 ],
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.device_unknown,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(width: 10),
+                  Text("Linked Device" , style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                ],
+              ),
             )
           ],
         ),
