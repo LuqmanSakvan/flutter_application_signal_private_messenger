@@ -59,7 +59,8 @@ class SettingsPage extends StatelessWidget {
                 ],
               ),
             ),
-            
+            Divider(height: 20,thickness: 1),
+            SizedBox(height: 10),
           ],
         ),
       ),
