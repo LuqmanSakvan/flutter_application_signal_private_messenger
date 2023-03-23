@@ -99,6 +99,19 @@ class SettingsPage extends StatelessWidget {
                   Text("Stories" , style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
                 ],
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.notifications,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(width: 10),
+                  Text("Notifications" , style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                ],
+              ),
             )
           ],
         ),
