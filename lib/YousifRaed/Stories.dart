@@ -18,7 +18,7 @@ body: Stack(
     Container(height: 810,width: 400,color: Colors.white),
     Positioned(top:100,right: 240,child: Text("Signal",style: TextStyle(fontSize: 30,fontWeight: FontWeight.w700),),),
     Positioned(top:100,right:340,child:CircleAvatar(child: Icon(Icons.circle),) ),
-    Positioned(child: Icon(Icons.search))
+    Positioned(top:100,left:310,child: Icon(Icons.search))
   ],
 ),
 
