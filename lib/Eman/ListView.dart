@@ -11,6 +11,7 @@ class MyList extends StatefulWidget {
 }
 
 class _MyListState extends State<MyList> {
+  bool _isSelected = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
