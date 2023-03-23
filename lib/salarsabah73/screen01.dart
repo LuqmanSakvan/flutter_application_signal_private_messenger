@@ -143,6 +143,10 @@ class SettingsPage extends StatelessWidget {
         title[0].toUpperCase(),
       ),
       ),
+      title: Text(
+        title,
+        style: TextStyle(fontWeight: FontWeight.bold , fontSize: 38),
+      ),
     );
   
   }
