@@ -25,7 +25,7 @@ body: Stack(
     Positioned(top:670,left:80,child: ElevatedButton(onPressed: (() {}), child:Icon(Icons.message_rounded),style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(),backgroundColor: Colors.transparent), )),
     Positioned(top:670,left:270,child: ElevatedButton(onPressed:(() {}), child: Icon(Icons.amp_stories_outlined),style: ElevatedButton.styleFrom(shape:RoundedRectangleBorder(),backgroundColor: Colors.black12),)),
     Positioned(top:720,left:96,child: Text("Chats",style: TextStyle(fontWeight: FontWeight.w500),)),
-    
+    Positioned(top:720,left:285,child: Text("Stories",style: TextStyle(fontWeight: FontWeight.w500),)),
 
 
   ],
