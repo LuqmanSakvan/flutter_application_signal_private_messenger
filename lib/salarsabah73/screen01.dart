@@ -47,7 +47,7 @@ class SettingsPage extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: [
                   Icon(
@@ -62,7 +62,7 @@ class SettingsPage extends StatelessWidget {
             Divider(height: 20,thickness: 1),
             SizedBox(height: 10),
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(15.0),
               child: Row(
                 children: [
                   Icon(
@@ -74,7 +74,19 @@ class SettingsPage extends StatelessWidget {
                 ],
               ),
             ),
-            
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.chat,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(width: 10),
+                  Text("Chats",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                ],
+              ),
+            )
           ],
         ),
       ),
