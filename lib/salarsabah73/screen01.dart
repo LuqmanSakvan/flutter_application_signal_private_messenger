@@ -28,6 +28,10 @@ class SettingsPage extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold,fontSize: 32),
               ),
               ),
+              title: Text(
+                'unkown',
+                style: TextStyle(fontWeight: FontWeight.bold , fontSize: 38),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(15.0),
