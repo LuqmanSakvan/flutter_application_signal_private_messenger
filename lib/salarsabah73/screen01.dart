@@ -9,7 +9,7 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Settings" , style: TextStyle(fontSize: 20)),
+        title: Text("Settings" , style: TextStyle(fontSize: 24)),
         leading: IconButton(onPressed: () {},
         icon: Icon(
           Icons.arrow_back,
@@ -55,7 +55,7 @@ class SettingsPage extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   SizedBox(width: 10),
-                  Text("Linked Device" , style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                  Text("Linked-Device" , style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
                 ],
               ),
             ),
