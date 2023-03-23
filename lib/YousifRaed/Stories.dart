@@ -14,7 +14,9 @@ class _MyWidgetState extends State<TabStories> {
   Widget build(BuildContext context) {
     return Scaffold(
 body: Stack(
-  
+  children: [
+    Container(height: 810,width: 400,color: Colors.white)
+  ],
 ),
 
     );
