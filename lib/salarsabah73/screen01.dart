@@ -112,7 +112,10 @@ class SettingsPage extends StatelessWidget {
                   Text("Notifications" , style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
                 ],
               ),
-            )
+            ),
+            Divider(height: 20,thickness: 1),
+            SizedBox(height: 10),
+            
           ],
         ),
       ),
