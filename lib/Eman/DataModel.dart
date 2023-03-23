@@ -2,7 +2,7 @@ class User_D_M{
 String name;
 String name2;
 String? sub_name2;
-String? hed;
+String hed;
 String? sub_name;
 
 User_D_M({

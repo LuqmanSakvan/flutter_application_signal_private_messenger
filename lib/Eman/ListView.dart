@@ -16,10 +16,10 @@ class MyList extends StatelessWidget {
 body: ListView.builder(itemCount: myuserlist.length,
 itemBuilder: (context, index) {
   return ListTile(
-    title: Text(myuserlist[index].name2,style: TextStyle(
+    title: Text(myuserlist[index].hed!.toString(),style: TextStyle(
             fontSize: 20,fontWeight: FontWeight.bold
           ),),
-          subtitle: Text(myuserlist[index].sub_name2!.toString(),
+          subtitle: Text(myuserlist[index].name2!.toString(),
           style: TextStyle(
             fontSize: 16,
           ),),
