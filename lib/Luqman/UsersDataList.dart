@@ -71,7 +71,7 @@ class _SignalListState extends State<SignalList> {
                     ),
                     title: Text(userlist[index].name),
                     subtitle: Text(
-                      '${userlist[index].name} is on Signal',
+                      '${userlist[index].name} Is On Signal',
                       style: TextStyle(fontSize: 12.0),
                     ),
                     trailing: new Column(
