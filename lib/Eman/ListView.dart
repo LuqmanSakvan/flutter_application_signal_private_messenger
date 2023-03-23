@@ -10,7 +10,10 @@ class MyList extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text("Account",
       style: TextStyle(color: Colors.black,fontSize: 24),),
-      backgroundColor: Colors.white,),
+      backgroundColor: Colors.white,
+      ),
+body: ListView.builder(),
+
     );
   }
 }
