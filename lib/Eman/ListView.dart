@@ -30,7 +30,7 @@ padding: const EdgeInsets.all(10),
           Row(
             children: [
               SizedBox(height: 40,),
-              Text("Signal PIN",)
+              Text("Signal PIN",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),)
             ],
           ),
         ],
