@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:signal_private_messenger/Eman/List.dart';
+import 'package:signal_private_messenger/Eman/ListView.dart';
 import 'package:signal_private_messenger/Eman/Search.dart';
 
 void main() {
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home: SearchScreen(),
-      home: ListUI(),
+      //home: ListUI(),
+      home: MyList(),
     );
   }
 }
