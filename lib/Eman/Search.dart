@@ -31,7 +31,15 @@ class _SearchScreenState extends State<SearchScreen> {
           }, icon: const Icon(Icons.search),
           color: Colors.black,)
         ],
-      ),
+//flexibleSpace: Container(
+  //decoration: BoxDecoration(
+    //gradient: LinearGradient(begin: Alignment.center,
+
+    //colors: [Colors.red,Colors.transparent]),
+    //borderRadius: BorderRadius.all(Radius.circular(50))
+  
+  ),
+      
      );
   } 
 }
