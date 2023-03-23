@@ -26,4 +26,6 @@ List<User_D_M>myuserlist=[
   User_D_M(name:"Language" , sub_name:"System defult",
   name2: "Registration",sub_name2: "Require your Signal PIN to register your phone number with Signal again"),
   
+  User_D_M(name:"" , sub_name:"",
+  name2: "Advanced PIN setting",sub_name2: ""),
 ];
