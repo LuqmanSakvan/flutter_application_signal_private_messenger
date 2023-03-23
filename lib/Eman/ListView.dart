@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:signal_private_messenger/Eman/DataModel.dart';
 
 class MyList extends StatelessWidget {
   const MyList({super.key});
@@ -12,7 +13,7 @@ class MyList extends StatelessWidget {
       style: TextStyle(color: Colors.black,fontSize: 24),),
       backgroundColor: Colors.white,
       ),
-body: ListView.builder(),
+body: ListView.builder(itemCount: myuserlist.length,),
 
     );
   }
