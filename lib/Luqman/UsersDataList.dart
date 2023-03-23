@@ -31,21 +31,6 @@ class SignalList extends StatefulWidget {
 }
 
 class _SignalListState extends State<SignalList> {
-//https://jsonplaceholder.typicode.com/users
-
-  Future<List<User>> _getUsers() async {
-    var data =
-        await http.get(Uri.parse("https://jsonplaceholder.typicode.com/users"));
-    var jsonData = json.decode(data.body);
-
-    List<User> users = [];
-    for (var u in jsonData) {
-      User user = User(u['id'], u['name']);
-      users.add(user);
-    }
-    return users;
-  }
-
   @override
   Widget build(BuildContext context) {
     Color getRandomColor() =>
