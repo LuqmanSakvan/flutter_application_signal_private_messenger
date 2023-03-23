@@ -19,19 +19,26 @@ class _MyListState extends State<MyList> {
       style: TextStyle(color: Colors.black,fontSize: 24),),
       backgroundColor: Colors.white,
       ),
-body: ListView.builder(itemCount: myuserlist.length,
-itemBuilder: (context, index) {
-  return ListTile(
-    title: Text(myuserlist[index].name2,style: TextStyle(
-            fontSize: 20,
-          ),),
-          subtitle: Text(myuserlist[index].sub_name2!.toString(),
-          style: TextStyle(
-            fontSize: 16,
-          ),),
-  );
-  
-},),
+body: Column(
+  children: [
+        ListView.builder(shrinkWrap: true,
+      itemCount: myuserlist.length,itemBuilder: (context, index) {
+      return ListTile(
+        title: Text(myuserlist[index].name2,style: TextStyle(fontSize: 20
+              ),),
+            subtitle: Text(myuserlist[index].sub_name2!.toString(),
+              style: TextStyle(fontSize: 16,),),
+    );
+    
+      
+    
+    },),
+    ListView.builder(itemCount: myuserlist.length,
+    itemBuilder: (context, index) {
+      
+    })
+  ],
+),
 
     );
   }
