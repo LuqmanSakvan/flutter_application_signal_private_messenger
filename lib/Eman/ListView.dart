@@ -13,7 +13,10 @@ class MyList extends StatelessWidget {
       style: TextStyle(color: Colors.black,fontSize: 24),),
       backgroundColor: Colors.white,
       ),
-body: ListView.builder(itemCount: myuserlist.length,),
+body: ListView.builder(itemCount: myuserlist.length,
+itemBuilder: (context, index) {
+  
+},),
 
     );
   }
