@@ -38,4 +38,7 @@ padding: const EdgeInsets.all(10),
     ),
     );
   }
+GestureDetector buildAccountOption(BuildContext context, String title){
+  return GestureDetector();
+}
 }
