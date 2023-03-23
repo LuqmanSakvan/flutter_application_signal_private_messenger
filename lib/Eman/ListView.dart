@@ -12,8 +12,31 @@ class MyList extends StatefulWidget {
   State<MyList> createState() => _MyListState();
 }
 
+
+
 class _MyListState extends State<MyList> {
-  bool _isSelected = false;
+ bool valNotify1=true;
+bool valNotify2=false;
+bool valNotify3=false;
+
+onChageFunction1(bool newValue1){
+  setState((){
+    valNotify1=newValue1;
+  });
+}
+
+onChageFunction2(bool newValue2){
+  setState((){
+    valNotify2=newValue2;
+  });
+}
+
+onChageFunction3(bool newValue3){
+  setState((){
+    valNotify3=newValue3;
+  });
+}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,36 +45,32 @@ class _MyListState extends State<MyList> {
       leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back),color: Colors.black,),
       backgroundColor: Colors.white,
       ),
+body:  ListView.builder(shrinkWrap: true,
+      itemCount: myuserlist.length,itemBuilder: (context, index) {
+      return ListTile(
+      title: Text(myuserlist[index].name2,style: TextStyle(fontSize: 20 ),),
+      subtitle: Text(myuserlist[index].sub_name2!.toString(),
+      style: TextStyle(fontSize: 16,),),
+    );
 
-    body: Container(
-padding: const EdgeInsets.all(10),
-      child: ListView(
-        children: [
-          Row(
-            children: [
-              SizedBox(height: 40,),
-              Text("Signal PIN",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold),)
-            ],
-          ),
-        ],
-      ),
-    ),
+         Container(height: 20,width: 300,
+           child: Divider(
+                   color: Colors.black,
+                    thickness: 2,
+                    ),
+         );
+ListTile(
+    title: Text(myuserlist[index].name2,style: TextStyle(fontSize: 20),),
+                 
+     subtitle: Text(myuserlist[index].sub_name2!.toString(),style: TextStyle(fontSize: 16,),),
+     
+          
+                  
+        );
+
+
+    },),
+    
     );
   }
-GestureDetector buildAccountOption(BuildContext context, String title){
-  return GestureDetector(
-    onTap: () {
-      
-    },
-    child: Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
-    child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    children: [
-      Text(title,style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,
-      color: Colors.grey[600]),)
-    ],
-    ),
-
-    ),
-  );
-}
 }
