@@ -17,15 +17,15 @@ User_D_M({
 
 List<User_D_M>myuserlist=[
   User_D_M(name:"Theme" , sub_name:"System defult",
-  name2:"",hed: "Signal PIN",sub_name2: ""),
+  hed: "Signal PIN",name2: "",sub_name2: ""),
 
-  User_D_M(name:"Chat color & wallpaper",sub_name: "",
+  User_D_M(name:"Chat color & wallpaper",sub_name: "",hed: "",
   name2: "Change your PIN",sub_name2: ""),
 
-  User_D_M(name:"Message font size" , sub_name:"Normal",
+  User_D_M(name:"Message font size" , sub_name:"Normal",hed: "",
   name2: "",sub_name2: ""),
 
-  User_D_M(name:"Language" , sub_name:"System defult",
+  User_D_M(name:"Language" , sub_name:"System defult",hed: "",
   name2: "",sub_name2: ""),
   
 ];
