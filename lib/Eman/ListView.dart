@@ -19,6 +19,10 @@ itemBuilder: (context, index) {
     title: Text(myuserlist[index].name2,style: TextStyle(
             fontSize: 20,fontWeight: FontWeight.bold
           ),),
+          subtitle: Text(myuserlist[index].sub_name2!.toString(),
+          style: TextStyle(
+            fontSize: 16,
+          ),),
   );
 },),
 
