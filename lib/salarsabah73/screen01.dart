@@ -86,6 +86,19 @@ class SettingsPage extends StatelessWidget {
                   Text("Chats",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
                 ],
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.web_stories,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(width: 10),
+                  Text("Stories" , style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                ],
+              ),
             )
           ],
         ),
