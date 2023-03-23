@@ -16,7 +16,9 @@ class MyList extends StatelessWidget {
 body: ListView.builder(itemCount: myuserlist.length,
 itemBuilder: (context, index) {
   return ListTile(
-    
+    title: Text(myuserlist[index].name,style: TextStyle(
+            fontSize: 20,
+          ),),
   );
 },),
 
