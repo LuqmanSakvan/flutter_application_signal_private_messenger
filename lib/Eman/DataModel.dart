@@ -24,6 +24,6 @@ List<User_D_M>myuserlist=[
   name2: "PIN reminders",sub_name2: "You'll be asked less frequently over time"),
 
   User_D_M(name:"Language" , sub_name:"System defult",
-  name2: "",sub_name2: ""),
+  name2: "Registration",sub_name2: "Require your Signal PIN to register your phone number with Signal again"),
   
 ];
