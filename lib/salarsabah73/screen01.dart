@@ -137,7 +137,8 @@ class SettingsPage extends StatelessWidget {
       required String title,
     }) =>
     ListTile(
-
+      contentPadding: EdgeInsets.symmetric(horizontal: 10),
+      leading: CircleAvatar(backgroundColor: Colors.blue,),
     );
   
   }
