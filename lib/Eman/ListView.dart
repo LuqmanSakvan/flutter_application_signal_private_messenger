@@ -3,9 +3,14 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:signal_private_messenger/Eman/DataModel.dart';
 
-class MyList extends StatelessWidget {
+class MyList extends StatefulWidget {
   const MyList({super.key});
 
+  @override
+  State<MyList> createState() => _MyListState();
+}
+
+class _MyListState extends State<MyList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,6 +29,7 @@ itemBuilder: (context, index) {
             fontSize: 16,
           ),),
   );
+  
 },),
 
     );
