@@ -52,45 +52,39 @@ class _SignalListState extends State<SignalList> {
         Colors.primaries[Random().nextInt(Colors.primaries.length)];
     return Container(
       child: FutureBuilder(
-        future: _getUsers(),
         builder: (BuildContext context, AsyncSnapshot snapshot) {
-          if (snapshot.data == null) {
-            return (Container(
-              child: Center(child: Text("Load")),
-            ));
-          } else
-            return (ListView.builder(
-              itemCount: userlist.length,
-              itemBuilder: (BuildContext context, int index) {
-                return (InkWell(
-                  splashColor: getRandomColor(),
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Inbox()));
-                  },
-                  child: Ink(
-                    child: ListTile(
-                      leading: CircleAvatar(
-                        backgroundColor: getRandomColor(),
-                        child: Text(
-                            userlist[index].name.substring(0, 2).toUpperCase()),
-                      ),
-                      title: Text(userlist[index].name),
-                      subtitle: Text(
-                        '${userlist[index].name} is on Signal',
-                        style: TextStyle(fontSize: 12.0),
-                      ),
-                      trailing: new Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          new Text("Jan 6"),
-                        ],
-                      ),
+          return (ListView.builder(
+            itemCount: userlist.length,
+            itemBuilder: (BuildContext context, int index) {
+              return (InkWell(
+                splashColor: getRandomColor(),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Inbox()));
+                },
+                child: Ink(
+                  child: ListTile(
+                    leading: CircleAvatar(
+                      backgroundColor: getRandomColor(),
+                      child: Text(
+                          userlist[index].name.substring(0, 2).toUpperCase()),
+                    ),
+                    title: Text(userlist[index].name),
+                    subtitle: Text(
+                      '${userlist[index].name} is on Signal',
+                      style: TextStyle(fontSize: 12.0),
+                    ),
+                    trailing: new Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        new Text("Jan 6"),
+                      ],
                     ),
                   ),
-                ));
-              },
-            ));
+                ),
+              ));
+            },
+          ));
         },
       ),
     );
