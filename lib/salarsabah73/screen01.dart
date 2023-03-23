@@ -115,15 +115,18 @@ class SettingsPage extends StatelessWidget {
             ),
             Divider(height: 20,thickness: 1),
             SizedBox(height: 10),
-            Row(
-              children: [
-                Icon(
-                  Icons.payment_outlined,
-                  color: Colors.blue,
-                ),
-                SizedBox(width: 10),
-                Text("Payments" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
-              ],
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.payment_outlined,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(width: 10),
+                  Text("Payments" , style: TextStyle(fontSize: 20 , fontWeight: FontWeight.bold),)
+                ],
+              ),
             )
 
           ],
