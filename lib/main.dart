@@ -21,8 +21,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home: SearchScreen(),
-      //home: ListUI(),
-      home: Home(),
+     // home: ListUI(),
+     // home: Home(),
+     home: MyList(),
     );
   }
 }
