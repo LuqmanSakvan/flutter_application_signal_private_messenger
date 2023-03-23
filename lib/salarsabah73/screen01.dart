@@ -20,6 +20,10 @@ class SettingsPage extends StatelessWidget {
         padding: const EdgeInsets.all(10),
         child: ListView(
           children: [
+            ListTile(
+              contentPadding: EdgeInsets.symmetric(horizontal: 10),
+              leading: CircleAvatar(backgroundColor: Colors.blue,),
+            ),
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Row(
