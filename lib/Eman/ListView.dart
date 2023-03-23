@@ -39,6 +39,13 @@ padding: const EdgeInsets.all(10),
     );
   }
 GestureDetector buildAccountOption(BuildContext context, String title){
-  return GestureDetector();
+  return GestureDetector(
+    onTap: () {
+      
+    },
+    child: Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
+    
+    ),
+  );
 }
 }
