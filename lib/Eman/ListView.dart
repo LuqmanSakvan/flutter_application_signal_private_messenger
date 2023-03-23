@@ -44,7 +44,12 @@ GestureDetector buildAccountOption(BuildContext context, String title){
       
     },
     child: Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
-    child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,),
+    child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    children: [
+      Text(title,style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,
+      color: Colors.grey[600]),)
+    ],
+    ),
 
     ),
   );
