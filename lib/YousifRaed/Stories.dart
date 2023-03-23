@@ -22,7 +22,8 @@ body: Stack(
     Positioned(top:100,left:350,child: Icon(Icons.menu)),
     Positioned(left:325,top:565,child: FloatingActionButton(onPressed:(() {} ),child: Icon(Icons.photo_camera),backgroundColor: Colors.black12,),),
     Positioned(top:655,child: Container(height: 150,width: 400,color: Colors.black12,)),
-    
+    Positioned(top:670,left:80,child: ElevatedButton(onPressed: (() {}), child:Icon(Icons.message_rounded),style: ElevatedButton.styleFrom(shape: RoundedRectangleBorder(),backgroundColor: Colors.transparent), )),
+
 
   ],
 ),
