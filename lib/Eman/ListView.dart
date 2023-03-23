@@ -17,7 +17,7 @@ body: ListView.builder(itemCount: myuserlist.length,
 itemBuilder: (context, index) {
   return ListTile(
     title: Text(myuserlist[index].name2,style: TextStyle(
-            fontSize: 20,
+            fontSize: 20,fontWeight: FontWeight.bold
           ),),
   );
 },),
