@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -37,11 +39,11 @@ body:
         ListView.builder(shrinkWrap: true,
           itemCount: myuserlist.length,itemBuilder: (context, index) {
           return ListTile(
-            
                 title: Text(myuserlist[index].name2,style: TextStyle(fontSize: 20
                       ),),
                     subtitle: Text(myuserlist[index].sub_name2!.toString(),
                       style: TextStyle(fontSize: 16,),),
+                      leading: Text(myuserlist[index].del,style: TextStyle(color: Colors.red),),
         );
         },),
       ],

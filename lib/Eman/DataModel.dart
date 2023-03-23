@@ -41,6 +41,7 @@ List<User_D_M>myuserlist=[
   User_D_M(name:"" , sub_name:"",
   name2: "Transfer account",sub_name2: "Transfer account to a new Android device",del: ""),
 
-  
+  User_D_M(name:"" , sub_name:"",
+  name2: "",sub_name2: "",del: "Delete account"),
   
 ];
