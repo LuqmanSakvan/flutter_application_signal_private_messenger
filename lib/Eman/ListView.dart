@@ -8,7 +8,8 @@ class MyList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Account"),),
+      appBar: AppBar(title: Text("Account",),
+      backgroundColor: Colors.white,),
     );
   }
 }
