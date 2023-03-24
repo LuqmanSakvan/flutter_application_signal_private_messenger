@@ -16,7 +16,10 @@ class _SearchScreenState extends State<SearchScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: [
-        TextField(),
+        TextField(
+          //onChanged: (value) => _runFilter(value),
+          decoration: InputDecoration(),
+        ),
       ]),
      );
   } 
