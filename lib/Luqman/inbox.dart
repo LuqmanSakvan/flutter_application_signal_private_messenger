@@ -46,14 +46,14 @@ class Inbox extends StatelessWidget {
               CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Text(
-                  'LU',
+                  userDataModel.name.substring(0, 2),
                   style: TextStyle(fontSize: 10),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.only(left: 10),
                 child: Text(
-                  "Luqman",
+                  userDataModel.name,
                   style: TextStyle(fontSize: 14),
                 ),
               ),
