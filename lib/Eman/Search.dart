@@ -17,28 +17,61 @@ class _SearchScreenState extends State<SearchScreen> {
     {
       "id": 1,
     "name": "Eman khalid",
-    "des": "co_founder & CEO @"
+    "des": "Student"
     },
      {
       "id": 2,
     "name": "Viyan khalid",
-    "des": "co_founder & CEO @"
+    "des": "Structural Enggineer"
     },
      {
       "id": 3,
     "name": "DAKHAZ khalid",
-    "des": "co_founder & CEO @"
+    "des": "Agricultural Engineer"
     },
      {
       "id": 4,
     "name": "Hahat khalid",
-    "des": "co_founder & CEO @"
+    "des": "Engineer"
     },
      {
       "id": 5,
     "name": "Awaz khalid",
+    "des": "She is Teacher"
+    },
+    {
+      "id": 6,
+    "name": "Enas khalid",
+    "des": "Student"
+    },
+    {
+      "id": 7,
+    "name": " Khalid hasan",
     "des": "co_founder & CEO @"
+    },
+
+    {
+      "id": 8,
+    "name": "Ahmed khalid",
+    "des": "Student"
+    },
+    {
+      "id": 9,
+    "name": "Mhamed khalid",
+    "des": "Student"
+    },
+    {
+      "id": 6,
+    "name": "Jihan khalid",
+    "des": "Teachers"
+    },
+    {
+      "id": 6,
+    "name": "Dlxaz khalid",
+    "des": "Employee"
     }
+    
+
   ];
 
   List<Map<String,dynamic>> _foundUsers=[];
@@ -92,7 +125,7 @@ SizedBox(height: 20,),
         margin: const EdgeInsets.symmetric(vertical: 2),
         child: ListTile(
           title: Text(_foundUsers[index]['name']),
-          subtitle: Text('${_foundUsers[index]["dos"]}'),
+          subtitle: Text('${_foundUsers[index]["des"]}'),
         ),
 
         ),
