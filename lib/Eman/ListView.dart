@@ -46,7 +46,17 @@ onChageFunction3(bool newValue3){
       backgroundColor: Colors.white,
       ),
       //body
-body:  
+body:  Container(
+  padding: const EdgeInsets.all(10),
+  child: ListView(
+    children: [
+      SizedBox(height: 20,),
+      Row(children: [
+        Text("Signal PIN",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)
+      ],)
+    ],
+  ),
+),
     
     );
   }
