@@ -174,6 +174,20 @@ class _InboxState extends State<Inbox> {
                     ],
                   ),
                 ),
+                PopupMenuItem(
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.timer,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Enable Auto-Delete"),
+                    ],
+                  ),
+                ),
               ],
             )
           ],
