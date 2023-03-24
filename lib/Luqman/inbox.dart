@@ -57,7 +57,7 @@ class Inbox extends StatelessWidget {
                 backgroundColor: Colors.white,
                 child: Text(
                   userDataModel.name.substring(0, 2),
-                  style: TextStyle(fontSize: 10),
+                  style: TextStyle(fontSize: 14),
                 ),
               ),
               Padding(
