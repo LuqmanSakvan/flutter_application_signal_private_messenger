@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -47,7 +48,8 @@ body:  Container(
     children: [
       SizedBox(height: 20,),
       Row(children: [
-        Text("Signal PIN",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+        Text("Signal PIN",
+        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
   
       ],),
       SizedBox(height: 26,),
@@ -60,6 +62,13 @@ body:  Container(
     
     );
   }
+Padding buildNotificationOption (String title,bool value,Function onChangeMethod){
+return Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
+
+)
+
+}
+
   GestureDetector buildAccountOption(BuildContext context,String title){
     return GestureDetector(
       onTap: (){},
@@ -69,6 +78,16 @@ body:  Container(
         children: [
           Text(title, style: TextStyle(fontWeight: FontWeight.w500,
           color: Colors.grey[600]
+          ),)
+          Transform.scale(scale: 0.7,
+          child: CupertinoSwitch(
+            activeColor: Colors.blue,
+           trackColor: Colors.grey,
+           value: value,
+           onChanged: (bool newValue){
+            onChangeMethod(newValue);
+           },
+            
           ),)
         ],
       ),
