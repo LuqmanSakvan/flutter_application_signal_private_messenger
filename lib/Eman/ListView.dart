@@ -63,7 +63,10 @@ body:  Container(
         Divider(height: 50,thickness: 2,),
         Text("Account",
         style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-         
+         SizedBox(height: 26,),
+        Text("Change phone number",style: TextStyle(fontSize: 20),),
+        SizedBox(height: 26,),
+        Text("Change phone number",style: TextStyle(fontSize: 20),),
 
     ],
   ),
