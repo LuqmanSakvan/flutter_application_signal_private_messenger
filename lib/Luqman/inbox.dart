@@ -132,6 +132,20 @@ class _InboxState extends State<Inbox> {
                     Text("Invite Friends"),
                   ]),
                 ),
+                PopupMenuItem(
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.share,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Share Contact")
+                    ],
+                  ),
+                ),
               ],
             )
           ],
