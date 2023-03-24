@@ -60,6 +60,7 @@ body:  Container(
         buildNotificationOption("Registration Lock", valNotify2, onChageFunction2),
         SizedBox(height: 26,),
         Text("Advanced PIN setting",style: TextStyle(fontSize: 20),),
+        Divider(height: 50,thickness: 2,)
     ],
   ),
 ),
