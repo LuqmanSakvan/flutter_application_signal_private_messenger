@@ -42,6 +42,12 @@ class _SearchScreenState extends State<SearchScreen> {
   ];
 
   List<Map<String,dynamic>> _foundUsers=[];
+   @override
+initState() {
+    _foundUsers=_allUsers;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
