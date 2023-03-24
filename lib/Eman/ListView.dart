@@ -107,9 +107,7 @@ child: Row(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(title, style: TextStyle(fontWeight: FontWeight.w500,
-          color: Colors.grey[600]
-          ),)
+          
           
         ],
       ),
