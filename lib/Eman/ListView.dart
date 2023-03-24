@@ -55,7 +55,10 @@ body:  Container(
       SizedBox(height: 26,),
         Text("Change your PIN",style: TextStyle(fontSize: 20),),
         SizedBox(height: 26,),
-        buildNotificationOption("PIN reminders", valNotify1, onChageFunction1)
+        buildNotificationOption("PIN reminders", valNotify1, onChageFunction1),
+         SizedBox(height: 26,),
+        buildNotificationOption("Registration Lock", valNotify2, onChageFunction2),
+        
     ],
   ),
 ),
@@ -63,11 +66,11 @@ body:  Container(
     );
   }
 Padding buildNotificationOption (String title,bool value,Function onChangeMethod){
-return Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 10),
+return Padding(padding: const EdgeInsets.symmetric(horizontal: 8),
 child: Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   children: [
-    Text(title , style: TextStyle(
+    Text(title , style: TextStyle(fontSize: 20,
     color: Colors.black
     ),),
    Transform.scale(scale: 0.7,
