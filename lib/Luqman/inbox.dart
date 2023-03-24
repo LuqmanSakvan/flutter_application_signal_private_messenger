@@ -84,10 +84,6 @@ class _InboxState extends State<Inbox> {
               padding: EdgeInsets.only(right: 20.0),
               child: GestureDetector(
                 onTap: () {},
-                child: Icon(
-                  Icons.more_vert,
-                  size: 30,
-                ),
               ),
             ),
             PopupMenuButton(
@@ -189,6 +185,10 @@ class _InboxState extends State<Inbox> {
                   ),
                 ),
               ],
+              child: Icon(
+                Icons.more_vert,
+                size: 30,
+              ),
             )
           ],
         ),
