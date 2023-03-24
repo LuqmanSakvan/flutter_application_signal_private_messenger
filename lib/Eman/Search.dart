@@ -21,7 +21,7 @@ class _SearchScreenState extends State<SearchScreen> {
           decoration: InputDecoration(
             contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15),
             hintText: "Search",
-            
+            prefixIcon: const Icon(Icons.arrow_back)
           ),
         ),
       ]),
