@@ -14,31 +14,7 @@ class SearchScreen extends StatefulWidget {
 class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(
-      
-      leading: IconButton(icon: Icon(Icons.arrow_back),
-      color: Colors.black,
-      onPressed: () {
-        Navigator.pop(context);
-      },),
-      backgroundColor: Colors.white,
-      title:Text("Search",style: TextStyle(color: Colors.black,
-        fontSize: 24,fontWeight: FontWeight.bold),
-        ),
-        actions: [
-          IconButton(onPressed: () {
-            showSearch(context:context , delegate: MySearchDelegate(),);
-          }, icon: const Icon(Icons.search),
-          color: Colors.black,)
-        ],
-//flexibleSpace: Container(
-  //decoration: BoxDecoration(
-    //gradient: LinearGradient(begin: Alignment.center,
-
-    //colors: [Colors.red,Colors.transparent]),
-    //borderRadius: BorderRadius.all(Radius.circular(50))
-  
-  ),
+    return Scaffold(
       
      );
   } 
