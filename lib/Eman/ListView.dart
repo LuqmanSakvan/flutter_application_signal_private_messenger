@@ -55,7 +55,7 @@ body:  Container(
       SizedBox(height: 26,),
         Text("Change your PIN",style: TextStyle(fontSize: 20),),
         SizedBox(height: 26,),
-        Text("PIN reminders",style: TextStyle(fontSize: 20),),
+        buildNotificationOption("PIN reminders", valNotify1, onChageFunction1)
     ],
   ),
 ),
@@ -68,7 +68,7 @@ child: Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   children: [
     Text(title , style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,
-    color: Colors.grey[600]
+    color: Colors.black
     ),),
    Transform.scale(scale: 0.7,
           child: CupertinoSwitch(
