@@ -4,14 +4,9 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:signal_private_messenger/Luqman/Models.dart';
 
-class Inbox extends StatefulWidget {
-  const Inbox({super.key});
+class Inbox extends StatelessWidget {
+  Inbox({super.key});
 
-  @override
-  State<Inbox> createState() => _InboxState();
-}
-
-class _InboxState extends State<Inbox> {
   List<ChatMessage> messages = [
     ChatMessage(messageContent: "Hello Luqman", messageType: "receiver"),
     ChatMessage(messageContent: "Hey,How are you", messageType: "Sender"),
