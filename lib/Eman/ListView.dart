@@ -100,10 +100,5 @@ child: Row(
 
 }
 
-  GestureDetector buildAccountOption(BuildContext context,String title){
-    return GestureDetector(
-      onTap: (){},
-     
-    );
+ 
   }
-}
