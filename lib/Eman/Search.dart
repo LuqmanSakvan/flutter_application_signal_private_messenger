@@ -56,7 +56,7 @@ initState() {
         padding: const EdgeInsets.symmetric(vertical: 28,horizontal: 5),
         child: Column(children: [
           TextField(
-            //onChanged: (value) => _runFilter(value),
+            onChanged: (value) => _runFilter(value),
             decoration: InputDecoration(
               contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15),
               hintText: "Search",
