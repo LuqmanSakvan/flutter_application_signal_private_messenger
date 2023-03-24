@@ -77,7 +77,7 @@ else{
               hintText: "Search",
               prefixIcon: IconButton(onPressed:() {
                  Navigator.pop(context);
-              }, icon: Icon(Icons.arrow_back)),
+              }, icon: Icon(Icons.arrow_back),color: Colors.black,),
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0),
               borderSide: const BorderSide(),
               )
