@@ -75,11 +75,16 @@ SizedBox(height: 20,),
         itemBuilder: (context, index) => Card(
         elevation: 1,
         margin: const EdgeInsets.symmetric(vertical: 2),
-        child: ListTile(),
+        child: ListTile(
+          title: Text(_foundUsers[index]['name']),
+          subtitle: Text('${_foundUsers[index]["dos"]}'),
+        ),
 
         ),
-        
-         ),
+         )
+         :const Text("No chats yet.Get started by messaging a friend.",
+         textAlign: TextAlign.center,
+         style: TextStyle(fontSize: 20,),)
          ),
 
         ]),
