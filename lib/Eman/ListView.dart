@@ -63,11 +63,11 @@ body:  Container(
     );
   }
 Padding buildNotificationOption (String title,bool value,Function onChangeMethod){
-return Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
+return Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 10),
 child: Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   children: [
-    Text(title , style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,
+    Text(title , style: TextStyle(
     color: Colors.black
     ),),
    Transform.scale(scale: 0.7,
