@@ -91,7 +91,22 @@ class _InboxState extends State<Inbox> {
               ),
             ),
             PopupMenuButton(
-              itemBuilder: (context) => [],
+              itemBuilder: (context) => [
+                PopupMenuItem(
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.color_lens,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Change Color"),
+                    ],
+                  ),
+                ),
+              ],
             )
           ],
         ),
