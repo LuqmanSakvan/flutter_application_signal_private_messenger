@@ -64,8 +64,25 @@ body:  Container(
   }
 Padding buildNotificationOption (String title,bool value,Function onChangeMethod){
 return Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
-
-)
+child: Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: [
+    Text(title , style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500,
+    color: Colors.grey[600]
+    ),),
+   Transform.scale(scale: 0.7,
+          child: CupertinoSwitch(
+            activeColor: Colors.blue,
+           trackColor: Colors.grey,
+           value: value,
+           onChanged: (bool newValue){
+            onChangeMethod(newValue);
+           },
+            
+          ),)
+  ],
+),
+);
 
 }
 
@@ -79,16 +96,7 @@ return Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
           Text(title, style: TextStyle(fontWeight: FontWeight.w500,
           color: Colors.grey[600]
           ),)
-          Transform.scale(scale: 0.7,
-          child: CupertinoSwitch(
-            activeColor: Colors.blue,
-           trackColor: Colors.grey,
-           value: value,
-           onChanged: (bool newValue){
-            onChangeMethod(newValue);
-           },
-            
-          ),)
+          
         ],
       ),
       ),
