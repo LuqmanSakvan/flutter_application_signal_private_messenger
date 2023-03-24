@@ -120,6 +120,18 @@ class _InboxState extends State<Inbox> {
                     ],
                   ),
                 ),
+                PopupMenuItem(
+                  child: Row(children: [
+                    Icon(
+                      Icons.add,
+                      color: Colors.black,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Text("Invite Friends"),
+                  ]),
+                ),
               ],
             )
           ],
