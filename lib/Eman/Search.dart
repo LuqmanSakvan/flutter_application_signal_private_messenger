@@ -18,7 +18,9 @@ class _SearchScreenState extends State<SearchScreen> {
       body: Column(children: [
         TextField(
           //onChanged: (value) => _runFilter(value),
-          decoration: InputDecoration(),
+          decoration: InputDecoration(
+            contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15)
+          ),
         ),
       ]),
      );
