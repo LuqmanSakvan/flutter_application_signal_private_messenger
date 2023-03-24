@@ -75,6 +75,7 @@ SizedBox(height: 20,),
         itemBuilder: (context, index) => Card(
         elevation: 1,
         margin: const EdgeInsets.symmetric(vertical: 2),
+        child: ListTile(),
 
         ),
         
