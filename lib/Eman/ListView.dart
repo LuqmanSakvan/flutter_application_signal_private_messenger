@@ -38,7 +38,9 @@ onChageFunction2(bool newValue2){
     return Scaffold(
       appBar: AppBar(title: Text("Account",
       style: TextStyle(color: Colors.black,fontSize: 24),),
-      leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back),color: Colors.black,),
+      leading: IconButton(onPressed: () {
+        
+      }, icon: Icon(Icons.arrow_back),color: Colors.black,),
       backgroundColor: Colors.white,
       ),
       //body
