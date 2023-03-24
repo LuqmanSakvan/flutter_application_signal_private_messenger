@@ -52,12 +52,19 @@ body:  Container(
     children: [
       SizedBox(height: 20,),
       Row(children: [
-        Text("Signal PIN",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),)
+        Text("Signal PIN",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+        SizedBox(height: 20,),
+        
       ],)
     ],
   ),
 ),
     
+    );
+  }
+  GestureDetector buildAccountOption(BuildContext context,String title){
+    return GestureDetector(
+      
     );
   }
 }
