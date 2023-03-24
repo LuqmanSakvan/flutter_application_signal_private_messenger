@@ -54,6 +54,10 @@ initState() {
       results=_allUsers.where((user) => 
       user["name"].toLowerCase().contains(enteredKeybord.toLowerCase())).toList();
     }
+    //Refresh the UI
+    setState(() {
+      _foundUsers=results;
+    });
   }
 
   @override
