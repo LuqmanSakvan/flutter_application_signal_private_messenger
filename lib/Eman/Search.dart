@@ -40,6 +40,8 @@ class _SearchScreenState extends State<SearchScreen> {
     "des": "co_founder & CEO @"
     }
   ];
+
+  List<Map<String,dynamic>> _foundUsers=[];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
