@@ -67,6 +67,8 @@ body:  Container(
         Text("Change phone number",style: TextStyle(fontSize: 20),),
         SizedBox(height: 26,),
         Text("Transfer account",style: TextStyle(fontSize: 20),),
+        SizedBox(height: 26,),
+        Text("Delete account",style: TextStyle(fontSize: 20,color: Colors.red),),
 
     ],
   ),
