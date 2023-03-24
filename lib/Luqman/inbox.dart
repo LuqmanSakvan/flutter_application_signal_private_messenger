@@ -146,6 +146,20 @@ class _InboxState extends State<Inbox> {
                     ],
                   ),
                 ),
+                PopupMenuItem(
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.block,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Block User"),
+                    ],
+                  ),
+                ),
               ],
             )
           ],
