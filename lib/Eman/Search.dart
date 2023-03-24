@@ -13,7 +13,33 @@ class SearchScreen extends StatefulWidget {
 
 class _SearchScreenState extends State<SearchScreen> {
 
-  final List<Map<String,dynamic>> _allUsers=[];
+  final List<Map<String,dynamic>> _allUsers=[
+    {
+      "id": 1,
+    "name": "Eman khalid",
+    "des": "co_founder & CEO @"
+    },
+     {
+      "id": 2,
+    "name": "Viyan khalid",
+    "des": "co_founder & CEO @"
+    },
+     {
+      "id": 3,
+    "name": "DAKHAZ khalid",
+    "des": "co_founder & CEO @"
+    },
+     {
+      "id": 4,
+    "name": "Hahat khalid",
+    "des": "co_founder & CEO @"
+    },
+     {
+      "id": 5,
+    "name": "Awaz khalid",
+    "des": "co_founder & CEO @"
+    }
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
