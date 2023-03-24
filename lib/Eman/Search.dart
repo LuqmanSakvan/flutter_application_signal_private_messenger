@@ -19,7 +19,9 @@ class _SearchScreenState extends State<SearchScreen> {
         TextField(
           //onChanged: (value) => _runFilter(value),
           decoration: InputDecoration(
-            contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15)
+            contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15),
+            hintText: "Search",
+            
           ),
         ),
       ]),
