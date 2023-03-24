@@ -4,6 +4,9 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:signal_private_messenger/Luqman/Models.dart';
 
+String str = "";
+TextEditingController n1controller = TextEditingController();
+
 class Inbox extends StatelessWidget {
   Inbox({super.key});
 
