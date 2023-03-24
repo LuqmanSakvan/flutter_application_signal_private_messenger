@@ -27,6 +27,16 @@ class Inbox extends StatelessWidget {
         messageContent: "yea that is good new app", messageType: "Sender"),
     ChatMessage(messageContent: "right it is new app", messageType: "receiver"),
     ChatMessage(messageContent: "ok,so now i am busy", messageType: "Sender"),
+    ChatMessage(messageContent: "What You have", messageType: "receiver"),
+    ChatMessage(messageContent: "It is not u business ", messageType: "Sender"),
+    ChatMessage(
+        messageContent: "Sorry for my interference", messageType: "receiver"),
+    ChatMessage(messageContent: "Welcome... ", messageType: "Sender"),
+    ChatMessage(messageContent: "Sorry can Ask Q? ", messageType: "receiver"),
+    ChatMessage(messageContent: "Ask", messageType: "Sender"),
+    ChatMessage(messageContent: "are u single?", messageType: "receiver"),
+    ChatMessage(messageContent: "yes but why!", messageType: "Sender"),
+    ChatMessage(messageContent: "ok thx bye", messageType: "receiver"),
   ];
 
   @override
