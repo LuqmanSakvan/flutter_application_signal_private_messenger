@@ -160,6 +160,20 @@ class _InboxState extends State<Inbox> {
                     ],
                   ),
                 ),
+                PopupMenuItem(
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.clear,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Clear Messages"),
+                    ],
+                  ),
+                ),
               ],
             )
           ],
