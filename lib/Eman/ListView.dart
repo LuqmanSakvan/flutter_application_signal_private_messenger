@@ -65,7 +65,16 @@ body:  Container(
   GestureDetector buildAccountOption(BuildContext context,String title){
     return GestureDetector(
       onTap: (){},
-      child: Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 20)),
+      child: Padding(padding: const EdgeInsets.symmetric(vertical: 8,horizontal: 20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(title, style: TextStyle(fontWeight: FontWeight.w500,
+          color: Colors.grey[600]
+          ),)
+        ],
+      ),
+      ),
     );
   }
 }
