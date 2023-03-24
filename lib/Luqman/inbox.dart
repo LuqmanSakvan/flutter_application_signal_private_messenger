@@ -90,6 +90,9 @@ class _InboxState extends State<Inbox> {
                 ),
               ),
             ),
+            PopupMenuButton(
+              itemBuilder: (context) => [],
+            )
           ],
         ),
         body: Stack(
