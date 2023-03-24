@@ -8,7 +8,9 @@ String str = "";
 TextEditingController n1controller = TextEditingController();
 
 class Inbox extends StatelessWidget {
-  Inbox({super.key});
+  final UserData userDataModel;
+
+  Inbox({super.key, required this.userDataModel});
 
   List<ChatMessage> messages = [
     ChatMessage(messageContent: "Hello Luqman", messageType: "receiver"),
