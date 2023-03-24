@@ -72,7 +72,10 @@ SizedBox(height: 20,),
 
        Expanded(child: _foundUsers.isNotEmpty
        ? ListView.builder(itemCount: _foundUsers.length,
-        itemBuilder: (context, index) =>
+        itemBuilder: (context, index) => Card(
+elevation: 1,
+
+        ),
         
          ),
          ),
