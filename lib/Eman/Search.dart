@@ -15,17 +15,23 @@ class _SearchScreenState extends State<SearchScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(children: [
-        TextField(
-          //onChanged: (value) => _runFilter(value),
-          decoration: InputDecoration(
-            contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15),
-            hintText: "Search",
-            prefixIcon: const Icon(Icons.arrow_back),
-            border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0))
+      
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 28,horizontal: 5),
+        child: Column(children: [
+          TextField(
+            //onChanged: (value) => _runFilter(value),
+            decoration: InputDecoration(
+              contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15),
+              hintText: "Search",
+               prefixIcon: IconButton(onPressed:() {}, icon: Icon(Icons.arrow_back)),
+              border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0),
+              borderSide: const BorderSide(),
+              )
+            ),
           ),
-        ),
-      ]),
+        ]),
+      ),
      );
   } 
 }
