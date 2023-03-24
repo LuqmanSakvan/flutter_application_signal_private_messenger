@@ -106,6 +106,20 @@ class _InboxState extends State<Inbox> {
                     ],
                   ),
                 ),
+                PopupMenuItem(
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.lock,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Start Secrect Chat"),
+                    ],
+                  ),
+                ),
               ],
             )
           ],
