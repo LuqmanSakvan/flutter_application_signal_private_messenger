@@ -17,7 +17,7 @@ class MyList extends StatefulWidget {
 class _MyListState extends State<MyList> {
  bool valNotify1=true;
 bool valNotify2=false;
-bool valNotify3=false;
+
 
 onChageFunction1(bool newValue1){
   setState((){
@@ -31,11 +31,6 @@ onChageFunction2(bool newValue2){
   });
 }
 
-onChageFunction3(bool newValue3){
-  setState((){
-    valNotify3=newValue3;
-  });
-}
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +42,7 @@ onChageFunction3(bool newValue3){
       ),
       //body
 body:  Container(
-  padding: const EdgeInsets.all(10),
+  padding: const EdgeInsets.all(15),
   child: ListView(
     children: [
       SizedBox(height: 20,),
@@ -56,7 +51,9 @@ body:  Container(
   
       ],),
       SizedBox(height: 26,),
-        Text("Change your PIN",style: TextStyle(fontSize: 20),)
+        Text("Change your PIN",style: TextStyle(fontSize: 20),),
+        SizedBox(height: 26,),
+        Text("PIN reminders",style: TextStyle(fontSize: 20),),
     ],
   ),
 ),
