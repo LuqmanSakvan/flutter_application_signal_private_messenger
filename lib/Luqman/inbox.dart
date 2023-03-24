@@ -116,7 +116,7 @@ class _InboxState extends State<Inbox> {
                       SizedBox(
                         width: 10,
                       ),
-                      Text("Start Secrect Chat"),
+                      Text("Start Secret Chat"),
                     ],
                   ),
                 ),
