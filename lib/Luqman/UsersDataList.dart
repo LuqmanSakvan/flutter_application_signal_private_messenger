@@ -66,7 +66,7 @@ class _SignalListState extends State<SignalList> {
                     trailing: new Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        new Text("Jan 6"),
+                        new Text(userlist[index].date.toString()),
                       ],
                     ),
                   ),
