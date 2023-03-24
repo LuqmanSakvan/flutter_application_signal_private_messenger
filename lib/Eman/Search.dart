@@ -51,6 +51,9 @@ initState() {
   void _runFilter(String enteredKeybord){
     List<Map<String,dynamic>> results=[];
     if(enteredKeybord.isEmpty){
+      results=_allUsers;
+      }
+else{
       results=_allUsers.where((user) => 
       user["name"].toLowerCase().contains(enteredKeybord.toLowerCase())).toList();
     }
