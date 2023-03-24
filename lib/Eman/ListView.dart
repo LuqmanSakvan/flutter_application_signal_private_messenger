@@ -53,9 +53,10 @@ body:  Container(
       SizedBox(height: 20,),
       Row(children: [
         Text("Signal PIN",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
-        SizedBox(height: 20,),
-        
-      ],)
+  
+      ],),
+      SizedBox(height: 26,),
+        Text("Change your PIN",style: TextStyle(fontSize: 20),)
     ],
   ),
 ),
