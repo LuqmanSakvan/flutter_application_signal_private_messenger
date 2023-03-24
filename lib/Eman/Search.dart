@@ -70,7 +70,12 @@ initState() {
           ),
 SizedBox(height: 20,),
 
-       Expanded(child: ),
+       Expanded(child: _foundUsers.isNotEmpty
+       ? ListView.builder(itemCount: _foundUsers.length,
+        itemBuilder: (context, index) =>
+        
+         ),
+         ),
 
         ]),
       ),
