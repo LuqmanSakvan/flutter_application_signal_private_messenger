@@ -12,6 +12,8 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
+
+  final List<Map<String,dynamic>> _allUsers=[];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +26,9 @@ class _SearchScreenState extends State<SearchScreen> {
             decoration: InputDecoration(
               contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15),
               hintText: "Search",
-               prefixIcon: IconButton(onPressed:() {}, icon: Icon(Icons.arrow_back)),
+              prefixIcon: IconButton(onPressed:() {
+                 Navigator.pop(context);
+              }, icon: Icon(Icons.arrow_back)),
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0),
               borderSide: const BorderSide(),
               )
