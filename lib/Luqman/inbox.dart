@@ -195,7 +195,6 @@ class Inbox extends StatelessWidget {
               itemCount: messages.length,
               shrinkWrap: true,
               padding: EdgeInsets.only(top: 10, bottom: 10),
-              physics: NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
                 return Container(
                   padding: EdgeInsets.only(
