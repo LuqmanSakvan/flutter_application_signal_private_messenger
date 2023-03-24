@@ -12,34 +12,78 @@ class SearchScreen extends StatefulWidget {
 }
 
 class _SearchScreenState extends State<SearchScreen> {
+
+  final List<Map<String,dynamic>> _allUsers=[
+    {
+      "id": 1,
+    "name": "Eman khalid",
+    "des": "co_founder & CEO @"
+    },
+     {
+      "id": 2,
+    "name": "Viyan khalid",
+    "des": "co_founder & CEO @"
+    },
+     {
+      "id": 3,
+    "name": "DAKHAZ khalid",
+    "des": "co_founder & CEO @"
+    },
+     {
+      "id": 4,
+    "name": "Hahat khalid",
+    "des": "co_founder & CEO @"
+    },
+     {
+      "id": 5,
+    "name": "Awaz khalid",
+    "des": "co_founder & CEO @"
+    }
+  ];
+
+  List<Map<String,dynamic>> _foundUsers=[];
+   @override
+initState() {
+    _foundUsers=_allUsers;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(
+    return Scaffold(
       
-      leading: IconButton(icon: Icon(Icons.arrow_back),
-      color: Colors.black,
-      onPressed: () {
-        Navigator.pop(context);
-      },),
-      backgroundColor: Colors.white,
-      title:Text("Search",style: TextStyle(color: Colors.black,
-        fontSize: 24,fontWeight: FontWeight.bold),
-        ),
-        actions: [
-          IconButton(onPressed: () {
-            showSearch(context:context , delegate: MySearchDelegate(),);
-          }, icon: const Icon(Icons.search),
-          color: Colors.black,)
-        ],
-//flexibleSpace: Container(
-  //decoration: BoxDecoration(
-    //gradient: LinearGradient(begin: Alignment.center,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 28,horizontal: 5),
+        child: Column(children: [
+          TextField(
+            //onChanged: (value) => _runFilter(value),
+            decoration: InputDecoration(
+              contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15),
+              hintText: "Search",
+              prefixIcon: IconButton(onPressed:() {
+                 Navigator.pop(context);
+              }, icon: Icon(Icons.arrow_back)),
+              border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0),
+              borderSide: const BorderSide(),
+              )
+            ),
+          ),
+SizedBox(height: 20,),
 
-    //colors: [Colors.red,Colors.transparent]),
-    //borderRadius: BorderRadius.all(Radius.circular(50))
-  
-  ),
-      
+       Expanded(child: _foundUsers.isNotEmpty
+       ? ListView.builder(itemCount: _foundUsers.length,
+        itemBuilder: (context, index) => Card(
+        elevation: 1,
+        margin: const EdgeInsets.symmetric(vertical: 2),
+        child: ListTile(),
+
+        ),
+        
+         ),
+         ),
+
+        ]),
+      ),
      );
   } 
 }

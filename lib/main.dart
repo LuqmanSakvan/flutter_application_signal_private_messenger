@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:signal_private_messenger/Eman/List.dart';
 import 'package:signal_private_messenger/Eman/ListView.dart';
 import 'package:signal_private_messenger/Eman/Search.dart';
+import 'package:signal_private_messenger/Luqman/Navigation_bar_buttom_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,8 +21,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home: SearchScreen(),
-      //home: ListUI(),
-      home: MyList(),
+     // home: ListUI(),
+     // home: Home(),
+     home: SearchScreen(),
     );
   }
 }

@@ -8,7 +8,7 @@
             "name": "Dart",
             "type": "dart",
             "request": "launch",
-            "program": "bin/main.dart"
+            "program": "lib/main.dart"
         },
         {
             "name": "flutter_application_signal_private_messenger (profile mode)",
