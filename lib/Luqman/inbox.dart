@@ -81,113 +81,110 @@ class _InboxState extends State<Inbox> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(right: 20.0),
-              child: GestureDetector(
-                onTap: () {},
-              ),
-            ),
-            PopupMenuButton(
-              itemBuilder: (context) => [
-                PopupMenuItem(
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.color_lens,
-                        color: Colors.black,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text("Change Color"),
-                    ],
-                  ),
-                ),
-                PopupMenuItem(
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.lock,
-                        color: Colors.black,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text("Start Secret Chat"),
-                    ],
-                  ),
-                ),
-                PopupMenuItem(
-                  child: Row(children: [
-                    Icon(
-                      Icons.add,
-                      color: Colors.black,
+              padding: const EdgeInsets.only(right: 3.0),
+              child: PopupMenuButton(
+                itemBuilder: (context) => [
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.color_lens,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Change Color"),
+                      ],
                     ),
-                    SizedBox(
-                      width: 10,
+                  ),
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.lock,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Start Secret Chat"),
+                      ],
                     ),
-                    Text("Invite Friends"),
-                  ]),
-                ),
-                PopupMenuItem(
-                  child: Row(
-                    children: [
+                  ),
+                  PopupMenuItem(
+                    child: Row(children: [
                       Icon(
-                        Icons.share,
+                        Icons.add,
                         color: Colors.black,
                       ),
                       SizedBox(
                         width: 10,
                       ),
-                      Text("Share Contact")
-                    ],
+                      Text("Invite Friends"),
+                    ]),
                   ),
-                ),
-                PopupMenuItem(
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.block,
-                        color: Colors.black,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text("Block User"),
-                    ],
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.share,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Share Contact")
+                      ],
+                    ),
                   ),
-                ),
-                PopupMenuItem(
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.clear,
-                        color: Colors.black,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text("Clear Messages"),
-                    ],
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.block,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Block User"),
+                      ],
+                    ),
                   ),
-                ),
-                PopupMenuItem(
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.timer,
-                        color: Colors.black,
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      Text("Enable Auto-Delete"),
-                    ],
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.clear,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Clear Messages"),
+                      ],
+                    ),
                   ),
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.timer,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Enable Auto-Delete"),
+                      ],
+                    ),
+                  ),
+                ],
+                child: Icon(
+                  Icons.more_vert,
+                  size: 30,
                 ),
-              ],
-              child: Icon(
-                Icons.more_vert,
-                size: 30,
               ),
             )
           ],
