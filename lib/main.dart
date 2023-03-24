@@ -20,11 +20,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      //home: SearchScreen(),
-     //home: ListUI(),
-     // home: Home(),
+      home: SearchScreen(),
+    // home: ListUI(),
+     //home: Home(),
      //home: SearchScreen(),
-     home: MyList(),
+    //home: MyList(),
     );
   }
 }
