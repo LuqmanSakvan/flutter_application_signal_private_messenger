@@ -58,7 +58,8 @@ body:  Container(
         buildNotificationOption("PIN reminders", valNotify1, onChageFunction1),
          SizedBox(height: 26,),
         buildNotificationOption("Registration Lock", valNotify2, onChageFunction2),
-        
+        SizedBox(height: 26,),
+        Text("Advanced PIN setting",style: TextStyle(fontSize: 20),),
     ],
   ),
 ),
@@ -66,7 +67,7 @@ body:  Container(
     );
   }
 Padding buildNotificationOption (String title,bool value,Function onChangeMethod){
-return Padding(padding: const EdgeInsets.symmetric(horizontal: 8),
+return Padding(padding: const EdgeInsets.symmetric(),
 child: Row(
   mainAxisAlignment: MainAxisAlignment.spaceBetween,
   children: [
