@@ -43,7 +43,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(20),
                       boxShadow: const [
-                        
+                        BoxShadow(
+                          color: Colors.blue,
+                          offset: Offset(2, 2),
+                        )
                       ]
                     ),
                   ),
