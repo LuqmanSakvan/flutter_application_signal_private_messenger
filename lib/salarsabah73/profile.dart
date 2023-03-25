@@ -47,8 +47,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           color: Colors.blue,
                           offset: Offset(2, 2),
                           blurRadius: 10,
-                        )
-                      ]
+                        ),
+                      ],
+                      image: const DecorationImage(
+                        fit: BoxFit.fill,
+                        image: AssetImage("assets/duhok.jpg")
+                        ),
                     ),
                   ),
                 ],
