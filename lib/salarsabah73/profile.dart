@@ -23,6 +23,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ),
         ),
       ),
+      body: SizedBox(
+        width: double.infinity,
+      ),
     );
   }
 }
