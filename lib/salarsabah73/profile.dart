@@ -63,7 +63,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
                     ),
-                  )
+                  ),
+                  const Text(
+                    "+964 750 555 2244",
+                    style: TextStyle(
+                      fontFamily: "arial",
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                    )
                 ],
               ),
             )
