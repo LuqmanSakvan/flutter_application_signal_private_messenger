@@ -39,7 +39,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       top: 100,
                       bottom: 8,
                     ),
-                  )
+                    decoration: BoxDecoration(
+                      
+                    ),
+                  ),
                 ],
               ),
             )
