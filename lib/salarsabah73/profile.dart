@@ -96,6 +96,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     topRight: Radius.circular(50),
                   )
                 ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  
+                ),
               ),
             )
           ],
