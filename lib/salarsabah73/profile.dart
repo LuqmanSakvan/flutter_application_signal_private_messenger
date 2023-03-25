@@ -110,6 +110,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                     const SizedBox(height: 18),
                     listProfile(Icons.person, "unknown", "Your Name"),
+                    listProfile(Icons.border_color_outlined,"About", "Write a few words about yourself"),
                   ],
                 ),
               ),
