@@ -132,6 +132,11 @@ Widget listProfile(IconData icon , String text1 , String text2){
         const SizedBox(width: 24),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              text1,
+            )
+          ],
         )
       ],
     ),
