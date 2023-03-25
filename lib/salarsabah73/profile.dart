@@ -83,7 +83,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             Expanded(
               flex: 5,
-              child: Container(),
+              child: Container(
+                padding: const EdgeInsets.only(
+                  top: 20,
+                  left: 24,
+                  right: 24,
+                ),
+              ),
             )
           ],
         ),
