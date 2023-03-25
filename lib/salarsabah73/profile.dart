@@ -119,5 +119,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 }
 Widget listProfile(IconData icon , String text1 , String text2){
-  return Container();
+  return Container(
+    width: double.infinity,
+    margin: const EdgeInsets.only(top: 20),
+    child: Row(
+      
+    ),
+  );
 }
