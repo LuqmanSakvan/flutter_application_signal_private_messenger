@@ -118,3 +118,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 }
+Widget listProfile(IconData icon , String text1 , String text2){
+  return Container();
+}
