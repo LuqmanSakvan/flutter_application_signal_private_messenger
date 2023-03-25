@@ -72,7 +72,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
                     ),
-                    )
+                    ),
+                    ElevatedButton(
+                      onPressed: () {}, 
+                      child: Text("edit photo"),
+                      ),
                 ],
               ),
             )
