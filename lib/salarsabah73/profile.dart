@@ -27,7 +27,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
         width: double.infinity,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
-          
+          children: [
+            Expanded(
+              flex: 4,
+              child: Column(),
+            )
+          ],
         ),
       ),
     );
