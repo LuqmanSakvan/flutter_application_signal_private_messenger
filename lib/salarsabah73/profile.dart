@@ -128,7 +128,8 @@ Widget listProfile(IconData icon , String text1 , String text2){
         Icon(
           icon,
           size: 20,
-        )
+        ),
+        const SizedBox(width: 24),
       ],
     ),
   );
