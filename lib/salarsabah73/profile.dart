@@ -40,7 +40,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       bottom: 8,
                     ),
                     decoration: BoxDecoration(
-                      
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(20),
                     ),
                   ),
                 ],
