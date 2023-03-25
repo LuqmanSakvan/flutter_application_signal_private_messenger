@@ -17,28 +17,61 @@ class _SearchScreenState extends State<SearchScreen> {
     {
       "id": 1,
     "name": "Eman khalid",
-    "des": "co_founder & CEO @"
+    "des": "Student"
     },
      {
       "id": 2,
     "name": "Viyan khalid",
-    "des": "co_founder & CEO @"
+    "des": "Structural Enggineer"
     },
      {
       "id": 3,
     "name": "DAKHAZ khalid",
-    "des": "co_founder & CEO @"
+    "des": "Agricultural Engineer"
     },
      {
       "id": 4,
     "name": "Hahat khalid",
-    "des": "co_founder & CEO @"
+    "des": "Engineer"
     },
      {
       "id": 5,
     "name": "Awaz khalid",
+    "des": "She is Teacher"
+    },
+    {
+      "id": 6,
+    "name": "Enas khalid",
+    "des": "Student"
+    },
+    {
+      "id": 7,
+    "name": " Khalid hasan",
     "des": "co_founder & CEO @"
+    },
+
+    {
+      "id": 8,
+    "name": "Ahmed khalid",
+    "des": "Student"
+    },
+    {
+      "id": 9,
+    "name": "Mhamed khalid",
+    "des": "Student"
+    },
+    {
+      "id": 6,
+    "name": "Jihan khalid",
+    "des": "Teachers"
+    },
+    {
+      "id": 6,
+    "name": "Dlxaz khalid",
+    "des": "Employee"
     }
+    
+
   ];
 
   List<Map<String,dynamic>> _foundUsers=[];
@@ -46,6 +79,21 @@ class _SearchScreenState extends State<SearchScreen> {
 initState() {
     _foundUsers=_allUsers;
     super.initState();
+  }
+
+  void _runFilter(String enteredKeybord){
+    List<Map<String,dynamic>> results=[];
+    if(enteredKeybord.isEmpty){
+      results=_allUsers;
+      }
+else{
+      results=_allUsers.where((user) => 
+      user["name"].toLowerCase().contains(enteredKeybord.toLowerCase())).toList();
+    }
+    //Refresh the UI
+    setState(() {
+      _foundUsers=results;
+    });
   }
 
   @override
@@ -56,13 +104,13 @@ initState() {
         padding: const EdgeInsets.symmetric(vertical: 28,horizontal: 5),
         child: Column(children: [
           TextField(
-            //onChanged: (value) => _runFilter(value),
+            onChanged: (value) => _runFilter(value),
             decoration: InputDecoration(
               contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15),
               hintText: "Search",
               prefixIcon: IconButton(onPressed:() {
                  Navigator.pop(context);
-              }, icon: Icon(Icons.arrow_back)),
+              }, icon: Icon(Icons.arrow_back),color: Colors.black,),
               border: OutlineInputBorder(borderRadius: BorderRadius.circular(20.0),
               borderSide: const BorderSide(),
               )
@@ -75,11 +123,16 @@ SizedBox(height: 20,),
         itemBuilder: (context, index) => Card(
         elevation: 1,
         margin: const EdgeInsets.symmetric(vertical: 2),
-        child: ListTile(),
+        child: ListTile(
+          title: Text(_foundUsers[index]['name']),
+          subtitle: Text('${_foundUsers[index]["des"]}'),
+        ),
 
         ),
-        
-         ),
+         )
+         :const Text("No chats yet.Get started by messaging a friend.",
+         textAlign: TextAlign.center,
+         style: TextStyle(fontSize: 20,),)
          ),
 
         ]),
@@ -87,72 +140,6 @@ SizedBox(height: 20,),
      );
   } 
 }
-class  MySearchDelegate extends  SearchDelegate{
-  List<String> searchResults =[
-'Barazil',
-'china',
-'India',
-'Russia',
-'USA',
-'Maldif',
-'London',
-'NewYourk',
-'Canada',
-'dlhi',
-  ];
 
-  @override
-  List<Widget>? buildActions(BuildContext context) => [
-    IconButton(onPressed: (){
-      if (query.isEmpty){
-        close(context, null); // close searchbar
-      }
-      else
-      {
-      query='';
-      }
-      }, 
-    icon: const Icon(Icons.clear),
-    ),
-  ];
-  @override
-  Widget? buildLeading(BuildContext context) => IconButton(
-    icon: const Icon(Icons.arrow_back),
-    onPressed: () => close(context, null),
-    );
-    
   
 
-  @override
-  Widget buildResults(BuildContext context) => Center(
-child: Text(query,
-style: const TextStyle(fontSize: 64, fontWeight: FontWeight.bold),
-    ),
-  );
-
-  @override
-  Widget buildSuggestions(BuildContext context) {
-List<String> suggestions = searchResults.where((searchResult) {
-final result =searchResult.toLowerCase();
-final input=query.toLowerCase();
-return result.contains(input);
-}).toList();
-
-
-
-return ListView.builder(
-  itemCount: suggestions.length,
-  itemBuilder:(context, index) {
-    final suggestion = suggestions[index];
-
-    return ListTile(
-      title: Text(suggestion),
-      onTap: () {
-        query=suggestion;
-        showResults(context);
-      },
-    );
-  },
-   );
-  }
-}

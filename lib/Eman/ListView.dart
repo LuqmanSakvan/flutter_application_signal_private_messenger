@@ -1,5 +1,5 @@
 import 'dart:ui';
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -17,7 +17,7 @@ class MyList extends StatefulWidget {
 class _MyListState extends State<MyList> {
  bool valNotify1=true;
 bool valNotify2=false;
-bool valNotify3=false;
+
 
 onChageFunction1(bool newValue1){
   setState((){
@@ -31,36 +31,75 @@ onChageFunction2(bool newValue2){
   });
 }
 
-onChageFunction3(bool newValue3){
-  setState((){
-    valNotify3=newValue3;
-  });
-}
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Account",
       style: TextStyle(color: Colors.black,fontSize: 24),),
-      leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back),color: Colors.black,),
+      leading: IconButton(onPressed: () {
+        
+      }, icon: Icon(Icons.arrow_back),color: Colors.black,),
       backgroundColor: Colors.white,
       ),
       //body
-body:  ListView.builder(shrinkWrap: true,
-      itemCount: myuserlist.length,itemBuilder: (context, index) {
-      return ListTile(
-      title: Text(myuserlist[index].name2,style: TextStyle(fontSize: 20 ),),
-      subtitle: Text(myuserlist[index].sub_name2!.toString(),
-      style: TextStyle(fontSize: 16,),),
+body:  Container(
+  padding: const EdgeInsets.all(15),
+  child: ListView(
+    children: [
+      SizedBox(height: 20,),
+      Row(children: [
+        Text("Signal PIN",
+        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+  
+      ],),
+      SizedBox(height: 26,),
+        Text("Change your PIN",style: TextStyle(fontSize: 20),),
+        SizedBox(height: 26,),
+        buildNotificationOption("PIN reminders", valNotify1, onChageFunction1),
+         SizedBox(height: 26,),
+        buildNotificationOption("Registration Lock", valNotify2, onChageFunction2),
+        SizedBox(height: 26,),
+        Text("Advanced PIN setting",style: TextStyle(fontSize: 20),),
+        Divider(height: 50,thickness: 2,),
+        Text("Account",
+        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+         SizedBox(height: 26,),
+        Text("Change phone number",style: TextStyle(fontSize: 20),),
+        SizedBox(height: 26,),
+        Text("Transfer account",style: TextStyle(fontSize: 20),),
+        SizedBox(height: 26,),
+        Text("Delete account",style: TextStyle(fontSize: 20,color: Colors.red),),
 
-      
-    );
-
-        
-
-
-    },),
+    ],
+  ),
+),
     
     );
   }
+Padding buildNotificationOption (String title,bool value,Function onChangeMethod){
+return Padding(padding: const EdgeInsets.symmetric(),
+child: Row(
+  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+  children: [
+    Text(title , style: TextStyle(fontSize: 20,
+    color: Colors.black
+    ),),
+   Transform.scale(scale: 0.7,
+          child: CupertinoSwitch(
+            activeColor: Colors.blue,
+           trackColor: Colors.grey,
+           value: value,
+           onChanged: (bool newValue){
+            onChangeMethod(newValue);
+           },
+            
+          ),)
+  ],
+),
+);
+
 }
+
+ 
+  }

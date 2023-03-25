@@ -44,8 +44,12 @@ class _SignalListState extends State<SignalList> {
               return (InkWell(
                 splashColor: getRandomColor(),
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Inbox()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Inbox(
+                                userDataModel: userlist[index],
+                              )));
                 },
                 child: Ink(
                   child: ListTile(
@@ -62,7 +66,7 @@ class _SignalListState extends State<SignalList> {
                     trailing: new Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        new Text("Jan 6"),
+                        new Text(userlist[index].date.toString()),
                       ],
                     ),
                   ),

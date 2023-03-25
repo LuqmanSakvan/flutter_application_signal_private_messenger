@@ -21,70 +21,67 @@ class UserData {
   String name;
   String email;
   String? phone;
+  DateTime? date;
 
 //constractor for inti my var
-  UserData({
-    required this.name,
-    required this.email,
-    this.phone,
-  });
+  UserData({required this.name, required this.email, this.phone, this.date});
 }
 
 //create fake data
 List<UserData> userlist = [
   UserData(
-    name: "LuqmanSakvan",
-    email: "Luqman@example.com",
-    phone: '0750555555',
-  ),
+      name: "LuqmanSakvan",
+      email: "Luqman@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
   UserData(
-    name: "Haya Amedi",
-    email: "Haya@example.com",
-    phone: '0750555555',
-  ),
+      name: "Haya Amedi",
+      email: "Haya@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
   UserData(
-    name: "Araz Mziri",
-    email: "Araz@example.com",
-    phone: '0750555555',
-  ),
+      name: "Araz Mziri",
+      email: "Araz@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
   UserData(
-    name: "Rondk Rekani",
-    email: "Rondk@example.com",
-    phone: '0750555555',
-  ),
+      name: "Rondk Rekani",
+      email: "Rondk@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
   UserData(
-    name: "Lana Rekani",
-    email: "Rondk@example.com",
-    phone: '0750555555',
-  ),
+      name: "Lana Rekani",
+      email: "Rondk@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
   UserData(
-    name: "Banaz Rekani",
-    email: "Rondk@example.com",
-    phone: '0750555555',
-  ),
+      name: "Banaz Rekani",
+      email: "Rondk@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
   UserData(
-    name: "Lole Brifkani",
-    email: "Rondk@example.com",
-    phone: '0750555555',
-  ),
+      name: "Lole Brifkani",
+      email: "Rondk@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
   UserData(
-    name: "Nazdar Bamarni",
-    email: "Rondk@example.com",
-    phone: '0750555555',
-  ),
+      name: "Nazdar Bamarni",
+      email: "Rondk@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
   UserData(
-    name: "Dldar Duhoki",
-    email: "Rondk@example.com",
-    phone: '0750555555',
-  ),
+      name: "Dldar Duhoki",
+      email: "Rondk@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
   UserData(
-    name: "Louzia Akri",
-    email: "Rondk@example.com",
-    phone: '0750555555',
-  ),
+      name: "Louzia Akri",
+      email: "Rondk@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
   UserData(
-    name: "Lozan Zaxoy",
-    email: "Rondk@example.com",
-    phone: '0750555555',
-  ),
+      name: "Lozan Zaxoy",
+      email: "Rondk@example.com",
+      phone: '0750555555',
+      date: DateTime.now()),
 ];

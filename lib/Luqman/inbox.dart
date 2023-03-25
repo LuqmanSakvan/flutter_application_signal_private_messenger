@@ -4,14 +4,14 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:signal_private_messenger/Luqman/Models.dart';
 
-class Inbox extends StatefulWidget {
-  const Inbox({super.key});
+String str = "";
+TextEditingController n1controller = TextEditingController();
 
-  @override
-  State<Inbox> createState() => _InboxState();
-}
+class Inbox extends StatelessWidget {
+  final UserData userDataModel;
 
-class _InboxState extends State<Inbox> {
+  Inbox({super.key, required this.userDataModel});
+
   List<ChatMessage> messages = [
     ChatMessage(messageContent: "Hello Luqman", messageType: "receiver"),
     ChatMessage(messageContent: "Hey,How are you", messageType: "Sender"),
@@ -27,6 +27,16 @@ class _InboxState extends State<Inbox> {
         messageContent: "yea that is good new app", messageType: "Sender"),
     ChatMessage(messageContent: "right it is new app", messageType: "receiver"),
     ChatMessage(messageContent: "ok,so now i am busy", messageType: "Sender"),
+    ChatMessage(messageContent: "What You have", messageType: "receiver"),
+    ChatMessage(messageContent: "It is not u business ", messageType: "Sender"),
+    ChatMessage(
+        messageContent: "Sorry for my interference", messageType: "receiver"),
+    ChatMessage(messageContent: "Welcome... ", messageType: "Sender"),
+    ChatMessage(messageContent: "Sorry can Ask Q? ", messageType: "receiver"),
+    ChatMessage(messageContent: "Ask", messageType: "Sender"),
+    ChatMessage(messageContent: "are u single?", messageType: "receiver"),
+    ChatMessage(messageContent: "yes but why!", messageType: "Sender"),
+    ChatMessage(messageContent: "ok thx bye", messageType: "receiver"),
   ];
 
   @override
@@ -46,14 +56,14 @@ class _InboxState extends State<Inbox> {
               CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Text(
-                  'LU',
-                  style: TextStyle(fontSize: 10),
+                  userDataModel.name.substring(0, 2),
+                  style: TextStyle(fontSize: 14),
                 ),
               ),
               Padding(
                 padding: EdgeInsets.only(left: 10),
                 child: Text(
-                  "Luqman",
+                  userDataModel.name,
                   style: TextStyle(fontSize: 14),
                 ),
               ),
@@ -81,15 +91,112 @@ class _InboxState extends State<Inbox> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(right: 20.0),
-              child: GestureDetector(
-                onTap: () {},
+              padding: const EdgeInsets.only(right: 3.0),
+              child: PopupMenuButton(
+                itemBuilder: (context) => [
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.color_lens,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Change Color"),
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.lock,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Start Secret Chat"),
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem(
+                    child: Row(children: [
+                      Icon(
+                        Icons.add,
+                        color: Colors.black,
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text("Invite Friends"),
+                    ]),
+                  ),
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.share,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Share Contact")
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.block,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Block User"),
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.clear,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Clear Messages"),
+                      ],
+                    ),
+                  ),
+                  PopupMenuItem(
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.timer,
+                          color: Colors.black,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text("Enable Auto-Delete"),
+                      ],
+                    ),
+                  ),
+                ],
                 child: Icon(
                   Icons.more_vert,
                   size: 30,
                 ),
               ),
-            ),
+            )
           ],
         ),
         body: Stack(
@@ -98,7 +205,6 @@ class _InboxState extends State<Inbox> {
               itemCount: messages.length,
               shrinkWrap: true,
               padding: EdgeInsets.only(top: 10, bottom: 10),
-              physics: NeverScrollableScrollPhysics(),
               itemBuilder: (context, index) {
                 return Container(
                   padding: EdgeInsets.only(
