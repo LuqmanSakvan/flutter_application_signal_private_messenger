@@ -107,7 +107,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),
