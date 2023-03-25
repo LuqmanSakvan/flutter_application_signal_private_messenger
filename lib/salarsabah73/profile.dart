@@ -101,6 +101,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     const Text(
                       "PROFILE",
+                      style: TextStyle(
+                        fontFamily: "montserrat",
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),
                     )
                   ],
                 ),
