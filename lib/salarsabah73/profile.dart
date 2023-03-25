@@ -135,7 +135,12 @@ Widget listProfile(IconData icon , String text1 , String text2){
           children: [
             Text(
               text1,
-            )
+              style: const TextStyle(
+                color: Colors.black,
+                fontFamily: "montserrat",
+                fontSize: 14,
+              ),
+            ),
           ],
         )
       ],
