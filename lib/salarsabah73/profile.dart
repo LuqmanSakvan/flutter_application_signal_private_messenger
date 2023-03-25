@@ -57,7 +57,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                   const Text(
                     "salar sabah",
-                    style: TextStyle(),
+                    style: TextStyle(
+                      fontFamily: "arial",
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   )
                 ],
               ),
