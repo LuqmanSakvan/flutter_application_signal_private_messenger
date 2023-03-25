@@ -98,7 +98,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  
+                  children: [
+                    const Text(
+                      "PROFILE",
+                    )
+                  ],
                 ),
               ),
             )
