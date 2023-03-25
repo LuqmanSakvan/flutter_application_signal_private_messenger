@@ -80,6 +80,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       ),
                 ],
               ),
+            ),
+            Expanded(
+              flex: 5,
+              child: Container(),
             )
           ],
         ),
