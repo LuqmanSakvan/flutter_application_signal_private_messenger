@@ -89,6 +89,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   left: 24,
                   right: 24,
                 ),
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                ),
               ),
             )
           ],
