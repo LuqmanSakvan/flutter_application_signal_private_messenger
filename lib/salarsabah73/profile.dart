@@ -141,6 +141,15 @@ Widget listProfile(IconData icon , String text1 , String text2){
                 fontSize: 14,
               ),
             ),
+            Text(
+              text2,
+              style: const TextStyle(
+                color: Colors.black,
+                fontFamily: "montserrat",
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
+            )
           ],
         )
       ],
