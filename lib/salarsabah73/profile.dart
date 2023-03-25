@@ -108,6 +108,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         fontSize: 20,
                       ),
                     ),
+                    const SizedBox()
                   ],
                 ),
               ),
