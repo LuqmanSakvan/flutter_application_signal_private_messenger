@@ -76,6 +76,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ElevatedButton(
                       onPressed: () {}, 
                       child: Text("edit photo"),
+                      style: ElevatedButton.styleFrom(shape: StadiumBorder()),
                       ),
                 ],
               ),
