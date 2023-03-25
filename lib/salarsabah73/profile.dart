@@ -35,6 +35,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   Container(
                     height: 120,
                     width: 120,
+                    margin: const EdgeInsets.only(
+                      top: 100,
+                      bottom: 8,
+                    ),
                   )
                 ],
               ),
