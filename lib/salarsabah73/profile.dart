@@ -30,7 +30,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
           children: [
             Expanded(
               flex: 4,
-              child: Column(),
+              child: Column(
+                children: [
+                  Container(
+                    height: 120,
+                    width: 120,
+                  )
+                ],
+              ),
             )
           ],
         ),
