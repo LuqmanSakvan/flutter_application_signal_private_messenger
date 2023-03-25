@@ -123,7 +123,13 @@ Widget listProfile(IconData icon , String text1 , String text2){
     width: double.infinity,
     margin: const EdgeInsets.only(top: 20),
     child: Row(
-      
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Icon(
+          icon,
+          size: 20,
+        )
+      ],
     ),
   );
 }
