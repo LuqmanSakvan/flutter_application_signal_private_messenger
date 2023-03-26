@@ -16,9 +16,15 @@ class ListUI extends StatelessWidget {
     title:Text("Appearance",style: TextStyle(color: Colors.black,fontSize: 24),),
     backgroundColor: Colors.white,
     ),
-     body: ListView.builder(itemCount: myuserlist.length,
+     body: ListView.builder(
+      itemCount: myuserlist.length,
       itemBuilder: (context, index) {
-        return ListTile(
+        //InWell
+        return InkWell(onTap: () {
+          
+        },
+        child: Ink(
+         child: ListTile(
           title: Text(myuserlist[index].name,style: TextStyle(
             fontSize: 20,
           ),),
@@ -26,7 +32,9 @@ class ListUI extends StatelessWidget {
           style: TextStyle(
             fontSize: 16,
           ),),
-        );
+        ),
+        ),);
+        
       }),
     );
   }

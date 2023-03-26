@@ -86,10 +86,12 @@ initState() {
     if(enteredKeybord.isEmpty){
       results=_allUsers;
       }
+
 else{
       results=_allUsers.where((user) => 
       user["name"].toLowerCase().contains(enteredKeybord.toLowerCase())).toList();
     }
+
     //Refresh the UI
     setState(() {
       _foundUsers=results;
@@ -106,7 +108,7 @@ else{
           TextField(
             onChanged: (value) => _runFilter(value),
             decoration: InputDecoration(
-              contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15),
+     contentPadding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 15),
               hintText: "Search",
               prefixIcon: IconButton(onPressed:() {
                  Navigator.pop(context);
