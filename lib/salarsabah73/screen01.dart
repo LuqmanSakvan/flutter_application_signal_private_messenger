@@ -126,6 +126,19 @@ class SettingsPage extends StatelessWidget {
                 ],
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.privacy_tip,
+                    color: Colors.blue,
+                  ),
+                  SizedBox(width: 10,),
+                  Text("privacy" , style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
+                ],
+              ),
+            ),
             Divider(height: 20,thickness: 1),
             SizedBox(height: 10),
             Padding(
