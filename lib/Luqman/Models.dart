@@ -21,10 +21,14 @@ class UserData {
   String name;
   String email;
   String? phone;
-  DateTime? date;
+  String date;
 
 //constractor for inti my var
-  UserData({required this.name, required this.email, this.phone, this.date});
+  UserData(
+      {required this.name,
+      required this.email,
+      this.phone,
+      required this.date});
 }
 
 //create fake data
@@ -33,55 +37,55 @@ List<UserData> userlist = [
       name: "LuqmanSakvan",
       email: "Luqman@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "Jan 5"),
   UserData(
       name: "Haya Amedi",
       email: "Haya@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "Oct 10"),
   UserData(
       name: "Araz Mziri",
       email: "Araz@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "May 15"),
   UserData(
       name: "Rondk Rekani",
       email: "Rondk@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "Feb 14"),
   UserData(
       name: "Lana Rekani",
       email: "Rondk@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "Mar 3"),
   UserData(
       name: "Banaz Rekani",
       email: "Rondk@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "Aug 19"),
   UserData(
       name: "Lole Brifkani",
       email: "Rondk@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "Sep 22"),
   UserData(
       name: "Nazdar Bamarni",
       email: "Rondk@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "Nov 27"),
   UserData(
       name: "Dldar Duhoki",
       email: "Rondk@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "Jun 17"),
   UserData(
       name: "Louzia Akri",
       email: "Rondk@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "JUl 7"),
   UserData(
       name: "Lozan Zaxoy",
       email: "Rondk@example.com",
       phone: '0750555555',
-      date: DateTime.now()),
+      date: "Dec "),
 ];
