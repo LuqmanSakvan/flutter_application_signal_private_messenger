@@ -127,6 +127,10 @@ SizedBox(height: 20,),
         elevation: 1,
         margin: const EdgeInsets.symmetric(vertical: 2),
         child: ListTile(
+           leading: CircleAvatar(
+                      child: Text(
+                          userlist[index].name.substring(0, 2).toUpperCase()),
+                    ),
         title: Text(userlist[index].name),
         //  title: Text(_foundUsers[index]['name']),
           subtitle: Text(userlist[index].email),
