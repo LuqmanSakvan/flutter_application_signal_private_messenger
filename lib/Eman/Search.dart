@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:signal_private_messenger/Luqman/Models.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -126,8 +127,10 @@ SizedBox(height: 20,),
         elevation: 1,
         margin: const EdgeInsets.symmetric(vertical: 2),
         child: ListTile(
-          title: Text(_foundUsers[index]['name']),
-          subtitle: Text('${_foundUsers[index]["des"]}'),
+        title: Text(userlist[index].name),
+        //  title: Text(_foundUsers[index]['name']),
+          subtitle: Text(userlist[index].email),
+          trailing: Text(userlist[index].date),
         ),
 
         ),
