@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:signal_private_messenger/Eman/DataModel.dart';
+import 'package:signal_private_messenger/Eman/WhiteScreen.dart';
 import 'package:signal_private_messenger/Luqman/Models.dart';
 
 class ListUI extends StatelessWidget {
@@ -21,7 +22,12 @@ class ListUI extends StatelessWidget {
       itemBuilder: (context, index) {
         //InWell
         return InkWell(onTap: () {
-          
+           Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PushScreen(),
+                    ),
+                  );
         },
         child: Ink(
          child: ListTile(
