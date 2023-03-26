@@ -32,7 +32,7 @@ class UserData {
 }
 
 //create fake data
-List<UserData> userlist = [
+final  List<UserData> userlist = [
   UserData(
       name: "LuqmanSakvan",
       email: "Luqman@example.com",
